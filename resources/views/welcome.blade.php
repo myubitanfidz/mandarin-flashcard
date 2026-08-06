@@ -18,7 +18,7 @@
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }
 
-            /* Smooth Animation */
+            /* Deklarasi Variabel CSS Khusus untuk Smooth Animation */
             @property --hole-size {
                 syntax: '<percentage>';
                 inherits: false;
@@ -38,19 +38,17 @@
                     --hole-size: 0%;
                 }
                 40% {
-                    
                     --fill-size: 150%;
                     --hole-size: 0%;
                 }
                 100% {
-                    
                     --fill-size: 150%;
                     --hole-size: 150%;
                 }
             }
 
             .animate-iris-wipe {
-                animation: irisWipe 1.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+                animation: irisWipe 1.1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
                 -webkit-mask-image: radial-gradient(circle at 50% 50%, transparent var(--hole-size), black var(--hole-size), black var(--fill-size), transparent var(--fill-size));
                 mask-image: radial-gradient(circle at 50% 50%, transparent var(--hole-size), black var(--hole-size), black var(--fill-size), transparent var(--fill-size));
             }
@@ -118,7 +116,7 @@
         </div>
 
         <!-- ================================================================= -->
-        <!-- LAYER 2: EFEK TRANSISI IRIS WIPE (FILL THEN CLEAR HOLE FROM CENTER)-->
+        <!-- LAYER 2: EFEK TRANSISI IRIS WIPE                                  -->
         <!-- ================================================================= -->
         <div x-show="isAnimating" 
              class="fixed inset-0 pointer-events-none z-20 bg-gradient-to-br from-red-600 via-red-700 to-amber-500 animate-iris-wipe">
@@ -133,32 +131,54 @@
              x-transition:enter-end="opacity-100 scale-100 translate-y-0"
              class="z-30 w-full max-w-md bg-white rounded-3xl shadow-2xl border-4 border-amber-400 p-8 flex flex-col items-center text-center relative">
 
-            <!-- Tombol Kembali ke Hexagon -->
+            <!-- Tombol Kembali ke Hexagon Dashboard -->
             <button @click="closeCard()" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
 
             <!-- Tag Level HSK -->
-            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-bold rounded-full mb-6">HSK Level 1</span>
+            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-bold rounded-full mb-6" x-text="'HSK Level ' + currentVocab.hsk_level"></span>
 
-            <!-- 1. Karakter Hanzi Besar -->
-            <h1 class="text-7xl font-extrabold text-gray-900 tracking-wide mb-4" x-text="currentVocab.hanzi"></h1>
+            <!-- State Loading -->
+            <template x-if="isLoading">
+                <div class="py-12 flex flex-col items-center gap-3">
+                    <div class="w-10 h-10 border-4 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
+                    <p class="text-sm text-gray-500 font-medium">Loading Kosakata...</p>
+                </div>
+            </template>
 
-            <!-- 2. Pinyin dengan Nada -->
-            <p class="text-2xl font-semibold text-amber-600 mb-2" x-text="currentVocab.pinyin"></p>
+            <!-- Display Kosakata -->
+            <template x-if="!isLoading && currentVocab.id">
+                <div class="w-full flex flex-col items-center">
+                    <!-- 1. Karakter Hanzi Besar -->
+                    <h1 class="text-7xl font-extrabold text-gray-900 tracking-wide mb-4" x-text="currentVocab.hanzi"></h1>
 
-            <!-- Jenis Kata -->
-            <span class="text-xs bg-slate-100 text-gray-600 px-2 py-0.5 rounded border border-gray-200 mb-6" x-text="currentVocab.type"></span>
+                    <!-- 2. Pinyin dengan Nada -->
+                    <p class="text-2xl font-semibold text-amber-600 mb-2" x-text="currentVocab.pinyin"></p>
 
-            <!-- 3. Terjemahan / Arti -->
-            <div class="w-full bg-slate-50 rounded-2xl p-4 border border-slate-100 mb-6">
-                <p class="text-gray-500 text-xs uppercase tracking-wider mb-1">Arti / Terjemahan</p>
-                <p class="text-xl font-bold text-gray-800" x-text="currentVocab.meaning"></p>
-            </div>
+                    <!-- Jenis Kata -->
+                    <span class="text-xs bg-slate-100 text-gray-600 px-2 py-0.5 rounded border border-gray-200 mb-6" x-text="currentVocab.type"></span>
 
-            <!-- Action Buttons -->
-            <div class="flex gap-4 w-full">
-                <button class="flex-1 py-3 bg-slate-200 hover:bg-slate-300 text-gray-800 font-bold rounded-xl transition cursor-pointer">Belum Hafal</button>
-                <button class="flex-1 py-3 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl shadow-lg transition cursor-pointer">Sudah Hafal ✅</button>
-            </div>
+                    <!-- 3. Terjemahan / Arti -->
+                    <div class="w-full bg-slate-50 rounded-2xl p-4 border border-slate-100 mb-6">
+                        <p class="text-gray-500 text-xs uppercase tracking-wider mb-1">Arti / Terjemahan</p>
+                        <p class="text-xl font-bold text-gray-800" x-text="currentVocab.meaning"></p>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex gap-4 w-full">
+                        <button @click="handleMastery(false)" 
+                                :disabled="isSubmitting"
+                                class="flex-1 py-3 bg-slate-200 hover:bg-slate-300 active:scale-95 text-gray-800 font-bold rounded-xl transition cursor-pointer disabled:opacity-50">
+                            Belum Hafal
+                        </button>
+                        <button @click="handleMastery(true)" 
+                                :disabled="isSubmitting"
+                                class="flex-1 py-3 bg-red-600 hover:bg-red-700 active:scale-95 text-white font-bold rounded-xl shadow-lg transition cursor-pointer disabled:opacity-50">
+                            Sudah Hafal ✅
+                        </button>
+                    </div>
+                </div>
+            </template>
+
         </div>
 
         <script>
@@ -167,23 +187,66 @@
                     isStarted: false,
                     isAnimating: false,
                     showCard: false,
+                    isLoading: false,
+                    isSubmitting: false,
 
                     currentVocab: {
-                        hanzi: '你好',
-                        pinyin: 'nǐ hǎo',
-                        type: '代词 (Kata Ganti / Pronoun)',
-                        meaning: 'Halo / Apa Kabar'
+                        id: null,
+                        hanzi: '',
+                        pinyin: '',
+                        type: '',
+                        meaning: '',
+                        hsk_level: 1
+                    },
+
+                    async fetchRandomVocab() {
+                        this.isLoading = true;
+                        try {
+                            const response = await fetch('/api/flashcards/random');
+                            const json = await response.json();
+                            if (json.success && json.data) {
+                                this.currentVocab = json.data;
+                            }
+                        } catch (error) {
+                            console.error('Gagal mengambil data kosakata:', error);
+                        } finally {
+                            this.isLoading = false;
+                        }
+                    },
+
+                    async handleMastery(isMastered) {
+                        if (!this.currentVocab.id || this.isSubmitting) return;
+
+                        this.isSubmitting = true;
+                        try {
+                            await fetch(`/api/flashcards/${this.currentVocab.id}/toggle-mastered`, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                                },
+                                body: JSON.stringify({ is_mastered: isMastered })
+                            });
+
+                            // Ambil kosakata berikutnya secara otomatis
+                            await this.fetchRandomVocab();
+                        } catch (error) {
+                            console.error('Gagal memperbarui status hafalan:', error);
+                        } finally {
+                            this.isSubmitting = false;
+                        }
                     },
 
                     startSession() {
                         this.isAnimating = true;
 
-                        // Di pertengahan (440ms) saat merah terisi penuh, tukar tampilan Hexagon dengan Flashcard
+                        // Tarik data dari API bersamaan dengan dimulainya animasi
+                        this.fetchRandomVocab();
+
                         setTimeout(() => {
                             this.isStarted = true;
                         }, 440);
 
-                        // Setelah seluruh animasi penghapusan selesai (1050ms), matikan layer animasi
                         setTimeout(() => {
                             this.isAnimating = false;
                             this.showCard = true;
