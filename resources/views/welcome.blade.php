@@ -13,87 +13,102 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <style>
-            /* Hexagon Flat-Topped (Sisi Datar Atas & Bawah) */
+            /* Hexagon Flat-Topped */
             .hexagon {
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }
 
-            @keyframes liquidSpill {
+            /* Smooth Animation */
+            @property --hole-size {
+                syntax: '<percentage>';
+                inherits: false;
+                initial-value: 0%;
+            }
+
+            @property --fill-size {
+                syntax: '<percentage>';
+                inherits: false;
+                initial-value: 0%;
+            }
+
+            /* ANIMASI IRIS WIPE */
+            @keyframes irisWipe {
                 0% {
-                    transform: scale(0);
-                    opacity: 0.9;
-                    border-radius: 50%;
+                    --fill-size: 0%;
+                    --hole-size: 0%;
                 }
-                50% {
-                    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+                40% {
+                    
+                    --fill-size: 150%;
+                    --hole-size: 0%;
                 }
                 100% {
-                    transform: scale(25);
-                    opacity: 1;
-                    border-radius: 0%;
+                    
+                    --fill-size: 150%;
+                    --hole-size: 150%;
                 }
             }
 
-            .animate-spill {
-                animation: liquidSpill 0.7s ease-in-out forwards;
+            .animate-iris-wipe {
+                animation: irisWipe 1.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+                -webkit-mask-image: radial-gradient(circle at 50% 50%, transparent var(--hole-size), black var(--hole-size), black var(--fill-size), transparent var(--fill-size));
+                mask-image: radial-gradient(circle at 50% 50%, transparent var(--hole-size), black var(--hole-size), black var(--fill-size), transparent var(--fill-size));
             }
         </style>
     </head>
     <body class="bg-slate-100 text-gray-900 font-sans min-h-screen flex items-center justify-center p-4 overflow-hidden" x-data="flashcardApp()">
         
         <!-- ================================================================= -->
-        <!-- LAYER 1: HONEYCOMB HEXAGON MAIN MENU (CLEAN & PERFECT GOLD BORDER) -->
+        <!-- LAYER 1: HONEYCOMB HEXAGON MAIN MENU                              -->
         <!-- ================================================================= -->
         <div x-show="!isStarted" class="relative w-[580px] h-[580px] flex items-center justify-center">
 
-            <!-- TOMBOL PUSAT: START! (Dengan Garis Emas Sempurna Menyusuri Clip-path) -->
+            <!-- TOMBOL PUSAT: START! -->
             <div class="absolute z-20 w-[220px] h-[195px] flex items-center justify-center">
-                <!-- Outer Gold Border Layer -->
                 <div class="absolute inset-0 bg-amber-400 hexagon"></div>
-                <!-- Inner Red Button Layer (Memberikan Efek Border Emas 4px Rata di Seluruh Sisi) -->
                 <button @click="startSession()" 
-                        class="absolute inset-[4px] bg-gradient-to-br from-red-600 to-red-700 text-white font-black text-2xl md:text-3xl hexagon shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex flex-col items-center justify-center gap-1 group cursor-pointer">
+                        class="absolute inset-[4px] bg-gradient-to-br from-red-600 via-red-600 to-amber-600 text-white font-black text-2xl md:text-3xl hexagon shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex flex-col items-center justify-center gap-1 group cursor-pointer">
                     <span class="tracking-wider group-hover:animate-pulse">START!</span>
                     <span class="text-[10px] md:text-xs font-normal text-amber-200">开始学习</span>
                 </button>
             </div>
 
-            <!-- 1. SISI ATAS (Daftar Hafal) - Polos Tanpa Border -->
+            <!-- 1. SISI ATAS (Daftar Hafal) -->
             <button style="transform: translateY(-182px);"
                     class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 cursor-pointer">
                 <span class="text-xs text-amber-600 font-bold">已学会</span>
                 <span class="text-xs font-medium">Daftar Hafal</span>
             </button>
 
-            <!-- 2. SISI KANAN ATAS (Tambah Kosakata) - Polos Tanpa Border -->
+            <!-- 2. SISI KANAN ATAS (Tambah Kosakata) -->
             <button style="transform: translate(172px, -91px);"
                     class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
                 <span class="text-xs text-red-600 font-bold">+ 词汇</span>
                 <span class="text-[10px] leading-tight font-medium">Tambah / Cari</span>
             </button>
 
-            <!-- 3. SISI KANAN BAWAH (Pengecek Nada) - Polos Tanpa Border -->
+            <!-- 3. SISI KANAN BAWAH (Pengecek Nada) -->
             <button style="transform: translate(172px, 91px);"
                     class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
                 <span class="text-xs text-amber-600 font-bold">🎙️ 声调</span>
                 <span class="text-[10px] leading-tight font-medium">Cek Nada</span>
             </button>
 
-            <!-- 4. SISI BAWAH (Kelola HSK) - Polos Tanpa Border -->
+            <!-- 4. SISI BAWAH (Kelola HSK) -->
             <button style="transform: translateY(182px);"
                     class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
                 <span class="text-xs text-red-600 font-bold">📚 HSK</span>
                 <span class="text-[10px] leading-tight font-medium">Kelola File</span>
             </button>
 
-            <!-- 5. SISI KIRI BAWAH (Canvas Penulisan) - Polos Tanpa Border -->
+            <!-- 5. SISI KIRI BAWAH (Canvas Penulisan) -->
             <button style="transform: translate(-172px, 91px);"
                     class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
                 <span class="text-xs text-amber-600 font-bold">✍️ 笔画</span>
                 <span class="text-[10px] leading-tight font-medium">Tulis Hanzi</span>
             </button>
 
-            <!-- 6. SISI KIRI ATAS (Grammar AI) - Polos Tanpa Border -->
+            <!-- 6. SISI KIRI ATAS (Grammar AI) -->
             <button style="transform: translate(-172px, -91px);"
                     class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
                 <span class="text-xs text-red-600 font-bold">🤖 语法</span>
@@ -103,11 +118,10 @@
         </div>
 
         <!-- ================================================================= -->
-        <!-- LAYER 2: EFEK WATER/LIQUID SPILL ANIMATION                        -->
+        <!-- LAYER 2: EFEK TRANSISI IRIS WIPE (FILL THEN CLEAR HOLE FROM CENTER)-->
         <!-- ================================================================= -->
         <div x-show="isAnimating" 
-             class="fixed inset-0 pointer-events-none z-20 flex items-center justify-center">
-            <div class="w-16 h-16 bg-gradient-to-br from-red-600 via-amber-500 to-red-700 animate-spill"></div>
+             class="fixed inset-0 pointer-events-none z-20 bg-gradient-to-br from-red-600 via-red-700 to-amber-500 animate-iris-wipe">
         </div>
 
         <!-- ================================================================= -->
@@ -131,7 +145,7 @@
             <!-- 2. Pinyin dengan Nada -->
             <p class="text-2xl font-semibold text-amber-600 mb-2" x-text="currentVocab.pinyin"></p>
 
-            <!-- Jenis Kata (Part of Speech Tag) -->
+            <!-- Jenis Kata -->
             <span class="text-xs bg-slate-100 text-gray-600 px-2 py-0.5 rounded border border-gray-200 mb-6" x-text="currentVocab.type"></span>
 
             <!-- 3. Terjemahan / Arti -->
@@ -164,11 +178,16 @@
                     startSession() {
                         this.isAnimating = true;
 
+                        // Di pertengahan (440ms) saat merah terisi penuh, tukar tampilan Hexagon dengan Flashcard
                         setTimeout(() => {
                             this.isStarted = true;
+                        }, 440);
+
+                        // Setelah seluruh animasi penghapusan selesai (1050ms), matikan layer animasi
+                        setTimeout(() => {
                             this.isAnimating = false;
                             this.showCard = true;
-                        }, 650);
+                        }, 1050);
                     },
 
                     closeCard() {
