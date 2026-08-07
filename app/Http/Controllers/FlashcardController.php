@@ -7,19 +7,26 @@ use Illuminate\Http\Request;
 
 class FlashcardController extends Controller
 {
-    /**
-     * Ambil 1 kosakata acak yang belum dihafal.
-     */
-    public function getRandomVocab()
+    public function getRandomVocab(Request $request)
     {
+        $level = $request->query('level', 1);
+
+        // Jika user memilih HSK 7 (yang mencakup level 7-9)
+        $query = Vocab::query();
+        if ($level == 7) {
+            $query->whereIn('hsk_level', [7, 8, 9]);
+        } else {
+            $query->where('hsk_level', $level);
+        }
+
         // Prioritaskan kosakata yang belum dihafal
-        $vocab = Vocab::where('is_mastered', false)
+        $vocab = (clone $query)->where('is_mastered', false)
             ->inRandomOrder()
             ->first();
 
-        // Jika semua sudah dihafal, ambil acak dari seluruh data
+        // Jika semua sudah dihafal, ambil acak dari level tersebut
         if (!$vocab) {
-            $vocab = Vocab::inRandomOrder()->first();
+            $vocab = $query->inRandomOrder()->first();
         }
 
         return response()->json([
@@ -28,9 +35,6 @@ class FlashcardController extends Controller
         ]);
     }
 
-    /**
-     * Perbarui status hafal/belum hafal kosakata.
-     */
     public function toggleMastered(Request $request, $id)
     {
         $vocab = Vocab::findOrFail($id);
