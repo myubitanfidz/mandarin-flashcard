@@ -1,0 +1,4002 @@
+[
+  {
+    "no": 1,
+    "hanzi": "阿姨",
+    "pinyin": "āyí",
+    "type": "noun",
+    "meaning": "aunt",
+    "hsk_level": 3
+  },
+  {
+    "no": 2,
+    "hanzi": "矮",
+    "pinyin": "ǎi",
+    "type": "adjective",
+    "meaning": "short",
+    "hsk_level": 3
+  },
+  {
+    "no": 3,
+    "hanzi": "爱⼈",
+    "pinyin": "àiren",
+    "type": "noun",
+    "meaning": "spouse",
+    "hsk_level": 3
+  },
+  {
+    "no": 4,
+    "hanzi": "安静",
+    "pinyin": "ānjìng",
+    "type": "adjective",
+    "meaning": "quiet",
+    "hsk_level": 3
+  },
+  {
+    "no": 5,
+    "hanzi": "安全",
+    "pinyin": "ānquán",
+    "type": "adjective",
+    "meaning": "safe",
+    "hsk_level": 3
+  },
+  {
+    "no": 6,
+    "hanzi": "把",
+    "pinyin": "bǎ",
+    "type": "classifier",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 7,
+    "hanzi": "搬",
+    "pinyin": "bān",
+    "type": "verb to move, to",
+    "meaning": "carry",
+    "hsk_level": 3
+  },
+  {
+    "no": 8,
+    "hanzi": "班级",
+    "pinyin": "bānjí",
+    "type": "noun class,",
+    "meaning": "grade",
+    "hsk_level": 3
+  },
+  {
+    "no": 9,
+    "hanzi": "搬家",
+    "pinyin": "bānjiā",
+    "type": "verb to move",
+    "meaning": "house",
+    "hsk_level": 3
+  },
+  {
+    "no": 10,
+    "hanzi": "办",
+    "pinyin": "bàn",
+    "type": "verb to do, to",
+    "meaning": "handle",
+    "hsk_level": 3
+  },
+  {
+    "no": 11,
+    "hanzi": "办法",
+    "pinyin": "bànfǎ",
+    "type": "noun way,",
+    "meaning": "solution",
+    "hsk_level": 3
+  },
+  {
+    "no": 12,
+    "hanzi": "办公室",
+    "pinyin": "bàngōngshì",
+    "type": "noun",
+    "meaning": "office",
+    "hsk_level": 3
+  },
+  {
+    "no": 13,
+    "hanzi": "半天",
+    "pinyin": "bàntiān number-classifierhalf",
+    "type": "a day, a long",
+    "meaning": "time",
+    "hsk_level": 3
+  },
+  {
+    "no": 14,
+    "hanzi": "帮助",
+    "pinyin": "bāngzhù",
+    "type": "verb",
+    "meaning": "help",
+    "hsk_level": 3
+  },
+  {
+    "no": 15,
+    "hanzi": "饱",
+    "pinyin": "bǎo",
+    "type": "adjective",
+    "meaning": "full",
+    "hsk_level": 3
+  },
+  {
+    "no": 16,
+    "hanzi": "报纸",
+    "pinyin": "bàozhǐ",
+    "type": "noun",
+    "meaning": "newspaper",
+    "hsk_level": 3
+  },
+  {
+    "no": 17,
+    "hanzi": "北",
+    "pinyin": "běi",
+    "type": "noun",
+    "meaning": "north",
+    "hsk_level": 3
+  },
+  {
+    "no": 18,
+    "hanzi": "北⽅",
+    "pinyin": "běifāng",
+    "type": "noun",
+    "meaning": "north",
+    "hsk_level": 3
+  },
+  {
+    "no": 19,
+    "hanzi": "被",
+    "pinyin": "bèi",
+    "type": "preposition",
+    "meaning": "by",
+    "hsk_level": 3
+  },
+  {
+    "no": 20,
+    "hanzi": "笔记",
+    "pinyin": "bǐjì",
+    "type": "noun",
+    "meaning": "notes",
+    "hsk_level": 3
+  },
+  {
+    "no": 21,
+    "hanzi": "⽐较",
+    "pinyin": "bǐjiào",
+    "type": "verb",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 22,
+    "hanzi": "笔记本",
+    "pinyin": "bǐjìběn",
+    "type": "noun",
+    "meaning": "notebook",
+    "hsk_level": 3
+  },
+  {
+    "no": 23,
+    "hanzi": "⽐如",
+    "pinyin": "bǐrú",
+    "type": "verb for",
+    "meaning": "example",
+    "hsk_level": 3
+  },
+  {
+    "no": 24,
+    "hanzi": "⽐赛",
+    "pinyin": "bǐsài",
+    "type": "verb 、 noun to",
+    "meaning": "compete; game, match",
+    "hsk_level": 3
+  },
+  {
+    "no": 25,
+    "hanzi": "必须",
+    "pinyin": "bìxū",
+    "type": "adverb",
+    "meaning": "must",
+    "hsk_level": 3
+  },
+  {
+    "no": 26,
+    "hanzi": "变",
+    "pinyin": "biàn",
+    "type": "verb to change, to",
+    "meaning": "become",
+    "hsk_level": 3
+  },
+  {
+    "no": 27,
+    "hanzi": "遍",
+    "pinyin": "biàn",
+    "type": "classifier measure word for",
+    "meaning": "actions",
+    "hsk_level": 3
+  },
+  {
+    "no": 28,
+    "hanzi": "变成",
+    "pinyin": "biànchéng",
+    "type": "verb to become, to turn",
+    "meaning": "into",
+    "hsk_level": 3
+  },
+  {
+    "no": 29,
+    "hanzi": "变化",
+    "pinyin": "biànhuà",
+    "type": "verb 、 noun to",
+    "meaning": "change; change",
+    "hsk_level": 3
+  },
+  {
+    "no": 30,
+    "hanzi": "表演",
+    "pinyin": "biǎoyǎn",
+    "type": "verb to perform, to",
+    "meaning": "act",
+    "hsk_level": 3
+  },
+  {
+    "no": 31,
+    "hanzi": "别的",
+    "pinyin": "biéde",
+    "type": "pronoun",
+    "meaning": "other",
+    "hsk_level": 3
+  },
+  {
+    "no": 32,
+    "hanzi": "别⼈",
+    "pinyin": "biérén",
+    "type": "pronoun other",
+    "meaning": "people",
+    "hsk_level": 3
+  },
+  {
+    "no": 33,
+    "hanzi": "宾馆",
+    "pinyin": "bīnguǎn",
+    "type": "noun",
+    "meaning": "hotel",
+    "hsk_level": 3
+  },
+  {
+    "no": 34,
+    "hanzi": "冰",
+    "pinyin": "bīng",
+    "type": "noun",
+    "meaning": "、（ verb ） ice; (to freeze)",
+    "hsk_level": 3
+  },
+  {
+    "no": 35,
+    "hanzi": "冰激凌",
+    "pinyin": "bīngjīlíng",
+    "type": "noun ice",
+    "meaning": "cream",
+    "hsk_level": 3
+  },
+  {
+    "no": 36,
+    "hanzi": "冰箱",
+    "pinyin": "bīngxiāng",
+    "type": "noun",
+    "meaning": "refrigerator",
+    "hsk_level": 3
+  },
+  {
+    "no": 37,
+    "hanzi": "病⼈",
+    "pinyin": "bìngrén",
+    "type": "noun",
+    "meaning": "patient",
+    "hsk_level": 3
+  },
+  {
+    "no": 38,
+    "hanzi": "不但",
+    "pinyin": "búdàn",
+    "type": "conjunction not",
+    "meaning": "only",
+    "hsk_level": 3
+  },
+  {
+    "no": 39,
+    "hanzi": "不见",
+    "pinyin": "bújiàn",
+    "type": "verb to disappear, to not",
+    "meaning": "see",
+    "hsk_level": 3
+  },
+  {
+    "no": 40,
+    "hanzi": "不⽤",
+    "pinyin": "búyòng",
+    "type": "adverb need",
+    "meaning": "not",
+    "hsk_level": 3
+  },
+  {
+    "no": 41,
+    "hanzi": "不同",
+    "pinyin": "bù tóng different",
+    "type": "-",
+    "meaning": "-",
+    "hsk_level": 3
+  },
+  {
+    "no": 42,
+    "hanzi": "不久",
+    "pinyin": "bùjiǔ",
+    "type": "adjective soon, not long",
+    "meaning": "after",
+    "hsk_level": 3
+  },
+  {
+    "no": 43,
+    "hanzi": "不⾏",
+    "pinyin": "bùxíng",
+    "type": "verb 、 adjective not allowed,",
+    "meaning": "won't do; not good",
+    "hsk_level": 3
+  },
+  {
+    "no": 44,
+    "hanzi": "才",
+    "pinyin": "cái",
+    "type": "adverb just,",
+    "meaning": "only",
+    "hsk_level": 3
+  },
+  {
+    "no": 45,
+    "hanzi": "菜单",
+    "pinyin": "càidān",
+    "type": "noun",
+    "meaning": "menu",
+    "hsk_level": 3
+  },
+  {
+    "no": 46,
+    "hanzi": "参加",
+    "pinyin": "cānjiā",
+    "type": "verb to join, to",
+    "meaning": "attend",
+    "hsk_level": 3
+  },
+  {
+    "no": 47,
+    "hanzi": "草",
+    "pinyin": "cǎo",
+    "type": "noun",
+    "meaning": "grass",
+    "hsk_level": 3
+  },
+  {
+    "no": 48,
+    "hanzi": "草地",
+    "pinyin": "cǎodì",
+    "type": "noun",
+    "meaning": "grassland",
+    "hsk_level": 3
+  },
+  {
+    "no": 49,
+    "hanzi": "层",
+    "pinyin": "céng",
+    "type": "classifier measure word for layer,",
+    "meaning": "floor",
+    "hsk_level": 3
+  },
+  {
+    "no": 50,
+    "hanzi": "查",
+    "pinyin": "chá",
+    "type": "verb to",
+    "meaning": "check",
+    "hsk_level": 3
+  },
+  {
+    "no": 51,
+    "hanzi": "差",
+    "pinyin": "chà",
+    "type": "adjective 、 verb bad,",
+    "meaning": "poor; to lack",
+    "hsk_level": 3
+  },
+  {
+    "no": 52,
+    "hanzi": "差不多",
+    "pinyin": "chàbuduō",
+    "type": "adjective 、 adverb almost,",
+    "meaning": "similar; nearly",
+    "hsk_level": 3
+  },
+  {
+    "no": 53,
+    "hanzi": "尝",
+    "pinyin": "cháng",
+    "type": "verb to",
+    "meaning": "taste",
+    "hsk_level": 3
+  },
+  {
+    "no": 54,
+    "hanzi": "常",
+    "pinyin": "cháng",
+    "type": "adverb often,",
+    "meaning": "frequent",
+    "hsk_level": 3
+  },
+  {
+    "no": 55,
+    "hanzi": "常见",
+    "pinyin": "cháng jiàn common",
+    "type": "-",
+    "meaning": "-",
+    "hsk_level": 3
+  },
+  {
+    "no": 56,
+    "hanzi": "常⽤",
+    "pinyin": "cháng yòng",
+    "type": "commonly",
+    "meaning": "used",
+    "hsk_level": 3
+  },
+  {
+    "no": 57,
+    "hanzi": "常常",
+    "pinyin": "chángcháng",
+    "type": "adverb",
+    "meaning": "often",
+    "hsk_level": 3
+  },
+  {
+    "no": 58,
+    "hanzi": "衬衫",
+    "pinyin": "chènshān",
+    "type": "noun",
+    "meaning": "shirt",
+    "hsk_level": 3
+  },
+  {
+    "no": 59,
+    "hanzi": "成绩",
+    "pinyin": "chéngjì",
+    "type": "noun score, grade,",
+    "meaning": "achievement",
+    "hsk_level": 3
+  },
+  {
+    "no": 60,
+    "hanzi": "城市",
+    "pinyin": "chéngshì",
+    "type": "noun",
+    "meaning": "city",
+    "hsk_level": 3
+  },
+  {
+    "no": 61,
+    "hanzi": "迟到",
+    "pinyin": "chídào",
+    "type": "verb to be",
+    "meaning": "late",
+    "hsk_level": 3
+  },
+  {
+    "no": 62,
+    "hanzi": "出发",
+    "pinyin": "chūfā",
+    "type": "verb to set out, to",
+    "meaning": "leave",
+    "hsk_level": 3
+  },
+  {
+    "no": 63,
+    "hanzi": "出⽣",
+    "pinyin": "chūshēng",
+    "type": "verb to be",
+    "meaning": "born",
+    "hsk_level": 3
+  },
+  {
+    "no": 64,
+    "hanzi": "出院",
+    "pinyin": "chūyuàn",
+    "type": "verb to be discharged from",
+    "meaning": "hospital",
+    "hsk_level": 3
+  },
+  {
+    "no": 65,
+    "hanzi": "初中",
+    "pinyin": "chūzhōng",
+    "type": "noun junior high",
+    "meaning": "school",
+    "hsk_level": 3
+  },
+  {
+    "no": 66,
+    "hanzi": "除了",
+    "pinyin": "chúle",
+    "type": "preposition except,",
+    "meaning": "besides",
+    "hsk_level": 3
+  },
+  {
+    "no": 67,
+    "hanzi": "船",
+    "pinyin": "chuán",
+    "type": "noun",
+    "meaning": "boat",
+    "hsk_level": 3
+  },
+  {
+    "no": 68,
+    "hanzi": "春天",
+    "pinyin": "chūntiān",
+    "type": "noun",
+    "meaning": "spring",
+    "hsk_level": 3
+  },
+  {
+    "no": 69,
+    "hanzi": "词典",
+    "pinyin": "cídiǎn",
+    "type": "noun",
+    "meaning": "dictionary",
+    "hsk_level": 3
+  },
+  {
+    "no": 70,
+    "hanzi": "聪明",
+    "pinyin": "cōngmíng",
+    "type": "adjective smart,",
+    "meaning": "clever",
+    "hsk_level": 3
+  },
+  {
+    "no": 71,
+    "hanzi": "打扫",
+    "pinyin": "dǎsǎo",
+    "type": "verb to",
+    "meaning": "clean",
+    "hsk_level": 3
+  },
+  {
+    "no": 72,
+    "hanzi": "打算",
+    "pinyin": "dǎsuàn",
+    "type": "verb 、 noun to plan,",
+    "meaning": "intend; plan",
+    "hsk_level": 3
+  },
+  {
+    "no": 73,
+    "hanzi": "⼤概",
+    "pinyin": "dàgài",
+    "type": "adjective",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 74,
+    "hanzi": "⼤⼈",
+    "pinyin": "dàren",
+    "type": "noun",
+    "meaning": "adult",
+    "hsk_level": 3
+  },
+  {
+    "no": 75,
+    "hanzi": "⼤⼩",
+    "pinyin": "dàxiǎo",
+    "type": "noun",
+    "meaning": "size",
+    "hsk_level": 3
+  },
+  {
+    "no": 76,
+    "hanzi": "⼤熊猫",
+    "pinyin": "dàxióngmāo",
+    "type": "noun giant",
+    "meaning": "panda",
+    "hsk_level": 3
+  },
+  {
+    "no": 77,
+    "hanzi": "⼤⾐",
+    "pinyin": "dàyī",
+    "type": "noun",
+    "meaning": "coat",
+    "hsk_level": 3
+  },
+  {
+    "no": 78,
+    "hanzi": "带",
+    "pinyin": "dài",
+    "type": "verb",
+    "meaning": "、（ noun ） to bring, to take; (belt)",
+    "hsk_level": 3
+  },
+  {
+    "no": 79,
+    "hanzi": "担⼼",
+    "pinyin": "dānxīn",
+    "type": "verb to",
+    "meaning": "worry",
+    "hsk_level": 3
+  },
+  {
+    "no": 80,
+    "hanzi": "蛋糕",
+    "pinyin": "dàngāo",
+    "type": "noun",
+    "meaning": "cake",
+    "hsk_level": 3
+  },
+  {
+    "no": 81,
+    "hanzi": "当然",
+    "pinyin": "dāngrán",
+    "type": "adverb of",
+    "meaning": "course",
+    "hsk_level": 3
+  },
+  {
+    "no": 82,
+    "hanzi": "到处",
+    "pinyin": "dàochù",
+    "type": "adverb",
+    "meaning": "everywhere",
+    "hsk_level": 3
+  },
+  {
+    "no": 83,
+    "hanzi": "得",
+    "pinyin": "dé",
+    "type": "verb to get, to",
+    "meaning": "obtain",
+    "hsk_level": 3
+  },
+  {
+    "no": 84,
+    "hanzi": "得到",
+    "pinyin": "dédào",
+    "type": "verb to get, to",
+    "meaning": "obtain",
+    "hsk_level": 3
+  },
+  {
+    "no": 85,
+    "hanzi": "得分",
+    "pinyin": "défēn",
+    "type": "verb 、 noun to",
+    "meaning": "score; score",
+    "hsk_level": 3
+  },
+  {
+    "no": 86,
+    "hanzi": "的话",
+    "pinyin": "dehuà",
+    "type": "auxiliary particle used after a",
+    "meaning": "condition",
+    "hsk_level": 3
+  },
+  {
+    "no": 87,
+    "hanzi": "得",
+    "pinyin": "děi",
+    "type": "verb must,",
+    "meaning": "need",
+    "hsk_level": 3
+  },
+  {
+    "no": 88,
+    "hanzi": "灯",
+    "pinyin": "dēng",
+    "type": "noun lamp,",
+    "meaning": "light",
+    "hsk_level": 3
+  },
+  {
+    "no": 89,
+    "hanzi": "地",
+    "pinyin": "dì",
+    "type": "noun ground, earth,",
+    "meaning": "land",
+    "hsk_level": 3
+  },
+  {
+    "no": 90,
+    "hanzi": "地点",
+    "pinyin": "dìdiǎn",
+    "type": "noun place,",
+    "meaning": "location",
+    "hsk_level": 3
+  },
+  {
+    "no": 91,
+    "hanzi": "地⽅",
+    "pinyin": "dìfang",
+    "type": "noun",
+    "meaning": "place",
+    "hsk_level": 3
+  },
+  {
+    "no": 92,
+    "hanzi": "地图",
+    "pinyin": "dìtú",
+    "type": "noun",
+    "meaning": "map",
+    "hsk_level": 3
+  },
+  {
+    "no": 93,
+    "hanzi": "电",
+    "pinyin": "diàn",
+    "type": "noun",
+    "meaning": "、（ verb ） electricity; (to give an electric",
+    "hsk_level": 3
+  },
+  {
+    "no": 94,
+    "hanzi": "电梯",
+    "pinyin": "diàntī",
+    "type": "noun",
+    "meaning": "elevator",
+    "hsk_level": 3
+  },
+  {
+    "no": 95,
+    "hanzi": "电⼦书",
+    "pinyin": "diànzǐshū",
+    "type": "noun",
+    "meaning": "e-book",
+    "hsk_level": 3
+  },
+  {
+    "no": 96,
+    "hanzi": "丢",
+    "pinyin": "diū",
+    "type": "verb to lose, to throw",
+    "meaning": "away",
+    "hsk_level": 3
+  },
+  {
+    "no": 97,
+    "hanzi": "东",
+    "pinyin": "dōng",
+    "type": "noun",
+    "meaning": "east",
+    "hsk_level": 3
+  },
+  {
+    "no": 98,
+    "hanzi": "东北",
+    "pinyin": "dōngběi",
+    "type": "noun",
+    "meaning": "northeast",
+    "hsk_level": 3
+  },
+  {
+    "no": 99,
+    "hanzi": "东⽅",
+    "pinyin": "dōngfāng",
+    "type": "noun",
+    "meaning": "east",
+    "hsk_level": 3
+  },
+  {
+    "no": 100,
+    "hanzi": "东南",
+    "pinyin": "dōngnán",
+    "type": "noun",
+    "meaning": "southeast",
+    "hsk_level": 3
+  },
+  {
+    "no": 101,
+    "hanzi": "冬天",
+    "pinyin": "dōngtiān",
+    "type": "noun",
+    "meaning": "winter",
+    "hsk_level": 3
+  },
+  {
+    "no": 102,
+    "hanzi": "懂得",
+    "pinyin": "dǒngde",
+    "type": "verb to",
+    "meaning": "understand",
+    "hsk_level": 3
+  },
+  {
+    "no": 103,
+    "hanzi": "动物",
+    "pinyin": "dòngwù",
+    "type": "noun",
+    "meaning": "animal",
+    "hsk_level": 3
+  },
+  {
+    "no": 104,
+    "hanzi": "动物园",
+    "pinyin": "dòngwùyuán",
+    "type": "noun",
+    "meaning": "zoo",
+    "hsk_level": 3
+  },
+  {
+    "no": 105,
+    "hanzi": "短",
+    "pinyin": "duǎn",
+    "type": "adjective",
+    "meaning": "short",
+    "hsk_level": 3
+  },
+  {
+    "no": 106,
+    "hanzi": "短裤",
+    "pinyin": "duǎnkù",
+    "type": "noun",
+    "meaning": "shorts",
+    "hsk_level": 3
+  },
+  {
+    "no": 107,
+    "hanzi": "段",
+    "pinyin": "duàn",
+    "type": "classifier measure word of",
+    "meaning": "segment,",
+    "hsk_level": 3
+  },
+  {
+    "no": 108,
+    "hanzi": "锻炼",
+    "pinyin": "duànliàn",
+    "type": "verb to",
+    "meaning": "exercise",
+    "hsk_level": 3
+  },
+  {
+    "no": 109,
+    "hanzi": "对话",
+    "pinyin": "duìhuà",
+    "type": "verb dialogue,",
+    "meaning": "conversation",
+    "hsk_level": 3
+  },
+  {
+    "no": 110,
+    "hanzi": "饿",
+    "pinyin": "è",
+    "type": "adjective",
+    "meaning": "hungry",
+    "hsk_level": 3
+  },
+  {
+    "no": 111,
+    "hanzi": "⽽且",
+    "pinyin": "érqiě",
+    "type": "conjunction and,",
+    "meaning": "moreover",
+    "hsk_level": 3
+  },
+  {
+    "no": 112,
+    "hanzi": "⽿朵",
+    "pinyin": "ěrduo",
+    "type": "noun",
+    "meaning": "ear",
+    "hsk_level": 3
+  },
+  {
+    "no": 113,
+    "hanzi": "⽿机",
+    "pinyin": "ěrjī",
+    "type": "noun",
+    "meaning": "earphone",
+    "hsk_level": 3
+  },
+  {
+    "no": 114,
+    "hanzi": "发",
+    "pinyin": "fā",
+    "type": "verb to send, to",
+    "meaning": "issue",
+    "hsk_level": 3
+  },
+  {
+    "no": 115,
+    "hanzi": "发烧",
+    "pinyin": "fāshāo",
+    "type": "verb to have a",
+    "meaning": "fever",
+    "hsk_level": 3
+  },
+  {
+    "no": 116,
+    "hanzi": "发⽣",
+    "pinyin": "fāshēng",
+    "type": "verb to",
+    "meaning": "happen",
+    "hsk_level": 3
+  },
+  {
+    "no": 117,
+    "hanzi": "发现",
+    "pinyin": "fāxiàn",
+    "type": "verb to find, to",
+    "meaning": "discover",
+    "hsk_level": 3
+  },
+  {
+    "no": 118,
+    "hanzi": "发展",
+    "pinyin": "fāzhǎn",
+    "type": "verb to",
+    "meaning": "develop",
+    "hsk_level": 3
+  },
+  {
+    "no": 119,
+    "hanzi": "⽅便",
+    "pinyin": "fāngbiàn",
+    "type": "adjective",
+    "meaning": "convenient",
+    "hsk_level": 3
+  },
+  {
+    "no": 120,
+    "hanzi": "⽅便⾯",
+    "pinyin": "fāngbiànmiàn",
+    "type": "noun instant",
+    "meaning": "noodles",
+    "hsk_level": 3
+  },
+  {
+    "no": 121,
+    "hanzi": "⽅法",
+    "pinyin": "fāngfǎ",
+    "type": "noun",
+    "meaning": "method",
+    "hsk_level": 3
+  },
+  {
+    "no": 122,
+    "hanzi": "⽅向",
+    "pinyin": "fāngxiàng",
+    "type": "noun",
+    "meaning": "direction",
+    "hsk_level": 3
+  },
+  {
+    "no": 123,
+    "hanzi": "房⼦",
+    "pinyin": "fángzi",
+    "type": "noun",
+    "meaning": "house",
+    "hsk_level": 3
+  },
+  {
+    "no": 124,
+    "hanzi": "放",
+    "pinyin": "fàng",
+    "type": "verb to put, to",
+    "meaning": "place",
+    "hsk_level": 3
+  },
+  {
+    "no": 125,
+    "hanzi": "放假",
+    "pinyin": "fàngjià",
+    "type": "verb to have a",
+    "meaning": "holiday",
+    "hsk_level": 3
+  },
+  {
+    "no": 126,
+    "hanzi": "放⼼",
+    "pinyin": "fàngxīn",
+    "type": "verb to relax, to feel at",
+    "meaning": "ease",
+    "hsk_level": 3
+  },
+  {
+    "no": 127,
+    "hanzi": "放学",
+    "pinyin": "fàngxué",
+    "type": "verb school is",
+    "meaning": "over",
+    "hsk_level": 3
+  },
+  {
+    "no": 128,
+    "hanzi": "分开",
+    "pinyin": "fēnkāi",
+    "type": "verb to",
+    "meaning": "separate",
+    "hsk_level": 3
+  },
+  {
+    "no": 129,
+    "hanzi": "风",
+    "pinyin": "fēng",
+    "type": "noun",
+    "meaning": "wind",
+    "hsk_level": 3
+  },
+  {
+    "no": 130,
+    "hanzi": "封",
+    "pinyin": "fēng",
+    "type": "classifier",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 131,
+    "hanzi": "夫妻",
+    "pinyin": "fūqī",
+    "type": "noun husband and",
+    "meaning": "wife",
+    "hsk_level": 3
+  },
+  {
+    "no": 132,
+    "hanzi": "服务",
+    "pinyin": "fúwù",
+    "type": "verb to",
+    "meaning": "serve",
+    "hsk_level": 3
+  },
+  {
+    "no": 133,
+    "hanzi": "附近",
+    "pinyin": "fùjìn",
+    "type": "noun",
+    "meaning": "nearby",
+    "hsk_level": 3
+  },
+  {
+    "no": 134,
+    "hanzi": "复习",
+    "pinyin": "fùxí",
+    "type": "verb to",
+    "meaning": "review",
+    "hsk_level": 3
+  },
+  {
+    "no": 135,
+    "hanzi": "该",
+    "pinyin": "gāi",
+    "type": "verb",
+    "meaning": "should",
+    "hsk_level": 3
+  },
+  {
+    "no": 136,
+    "hanzi": "⼲净",
+    "pinyin": "gānjìng",
+    "type": "adjective",
+    "meaning": "clean",
+    "hsk_level": 3
+  },
+  {
+    "no": 137,
+    "hanzi": "感兴趣",
+    "pinyin": "gǎn xìngqù",
+    "type": "to be interested",
+    "meaning": "in",
+    "hsk_level": 3
+  },
+  {
+    "no": 138,
+    "hanzi": "感到",
+    "pinyin": "gǎndào",
+    "type": "verb to",
+    "meaning": "feel",
+    "hsk_level": 3
+  },
+  {
+    "no": 139,
+    "hanzi": "感冒",
+    "pinyin": "gǎnmào",
+    "type": "noun 、 verb",
+    "meaning": "cold; to catch a cold",
+    "hsk_level": 3
+  },
+  {
+    "no": 140,
+    "hanzi": "⼲",
+    "pinyin": "gàn",
+    "type": "verb to do, to",
+    "meaning": "work",
+    "hsk_level": 3
+  },
+  {
+    "no": 141,
+    "hanzi": "刚",
+    "pinyin": "gāng",
+    "type": "adverb just, just",
+    "meaning": "now",
+    "hsk_level": 3
+  },
+  {
+    "no": 142,
+    "hanzi": "刚才",
+    "pinyin": "gāngcái",
+    "type": "noun just",
+    "meaning": "now",
+    "hsk_level": 3
+  },
+  {
+    "no": 143,
+    "hanzi": "刚刚",
+    "pinyin": "gānggāng",
+    "type": "adverb just now, a moment",
+    "meaning": "ago",
+    "hsk_level": 3
+  },
+  {
+    "no": 144,
+    "hanzi": "⾼铁",
+    "pinyin": "gāotiě",
+    "type": "noun",
+    "meaning": "high-speed rail",
+    "hsk_level": 3
+  },
+  {
+    "no": 145,
+    "hanzi": "根据",
+    "pinyin": "gēnjù",
+    "type": "verb",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 146,
+    "hanzi": "更",
+    "pinyin": "gèng",
+    "type": "adverb",
+    "meaning": "more",
+    "hsk_level": 3
+  },
+  {
+    "no": 147,
+    "hanzi": "公⽄",
+    "pinyin": "gōngjīn",
+    "type": "classifier",
+    "meaning": "kilogram",
+    "hsk_level": 3
+  },
+  {
+    "no": 148,
+    "hanzi": "公园",
+    "pinyin": "gōngyuán",
+    "type": "noun",
+    "meaning": "park",
+    "hsk_level": 3
+  },
+  {
+    "no": 149,
+    "hanzi": "⼯作⽇",
+    "pinyin": "gōngzuòrì",
+    "type": "noun",
+    "meaning": "workday",
+    "hsk_level": 3
+  },
+  {
+    "no": 150,
+    "hanzi": "故事",
+    "pinyin": "gùshi",
+    "type": "noun",
+    "meaning": "story",
+    "hsk_level": 3
+  },
+  {
+    "no": 151,
+    "hanzi": "刮",
+    "pinyin": "guā",
+    "type": "verb to scrape, to",
+    "meaning": "blow",
+    "hsk_level": 3
+  },
+  {
+    "no": 152,
+    "hanzi": "关",
+    "pinyin": "guān",
+    "type": "verb",
+    "meaning": "、（ noun ） to close, to turn off; pass",
+    "hsk_level": 3
+  },
+  {
+    "no": 153,
+    "hanzi": "关机",
+    "pinyin": "guānjī",
+    "type": "verb to turn off",
+    "meaning": "device",
+    "hsk_level": 3
+  },
+  {
+    "no": 154,
+    "hanzi": "关系",
+    "pinyin": "guānxì",
+    "type": "noun",
+    "meaning": "、（ verb ） relationship; (to relate)",
+    "hsk_level": 3
+  },
+  {
+    "no": 155,
+    "hanzi": "关⼼",
+    "pinyin": "guānxīn",
+    "type": "verb to care about, to be",
+    "meaning": "concerned",
+    "hsk_level": 3
+  },
+  {
+    "no": 156,
+    "hanzi": "关于",
+    "pinyin": "guānyú",
+    "type": "preposition about,",
+    "meaning": "regarding",
+    "hsk_level": 3
+  },
+  {
+    "no": 157,
+    "hanzi": "关注",
+    "pinyin": "guānzhù",
+    "type": "verb to pay attention to, to",
+    "meaning": "follow",
+    "hsk_level": 3
+  },
+  {
+    "no": 158,
+    "hanzi": "国家",
+    "pinyin": "guójiā",
+    "type": "noun",
+    "meaning": "country",
+    "hsk_level": 3
+  },
+  {
+    "no": 159,
+    "hanzi": "过节",
+    "pinyin": "guòjié",
+    "type": "verb to celebrate a",
+    "meaning": "festival",
+    "hsk_level": 3
+  },
+  {
+    "no": 160,
+    "hanzi": "过去",
+    "pinyin": "guòqù",
+    "type": "noun",
+    "meaning": "past",
+    "hsk_level": 3
+  },
+  {
+    "no": 161,
+    "hanzi": "海",
+    "pinyin": "hǎi",
+    "type": "noun",
+    "meaning": "sea",
+    "hsk_level": 3
+  },
+  {
+    "no": 162,
+    "hanzi": "害怕",
+    "pinyin": "hàipà",
+    "type": "verb to be",
+    "meaning": "afraid",
+    "hsk_level": 3
+  },
+  {
+    "no": 163,
+    "hanzi": "好多",
+    "pinyin": "hǎoduō",
+    "type": "number many, a",
+    "meaning": "lot",
+    "hsk_level": 3
+  },
+  {
+    "no": 164,
+    "hanzi": "好久",
+    "pinyin": "hǎojiǔ",
+    "type": "adjective a long",
+    "meaning": "time",
+    "hsk_level": 3
+  },
+  {
+    "no": 165,
+    "hanzi": "好像",
+    "pinyin": "hǎoxiàng",
+    "type": "verb 、 adverb to seem, as",
+    "meaning": "if; perhaps",
+    "hsk_level": 3
+  },
+  {
+    "no": 166,
+    "hanzi": "号码",
+    "pinyin": "hàomǎ",
+    "type": "noun number,",
+    "meaning": "code",
+    "hsk_level": 3
+  },
+  {
+    "no": 167,
+    "hanzi": "河",
+    "pinyin": "hé",
+    "type": "noun",
+    "meaning": "river",
+    "hsk_level": 3
+  },
+  {
+    "no": 168,
+    "hanzi": "合适",
+    "pinyin": "héshì",
+    "type": "adjective",
+    "meaning": "suitable",
+    "hsk_level": 3
+  },
+  {
+    "no": 169,
+    "hanzi": "⿊板",
+    "pinyin": "hēibǎn",
+    "type": "noun",
+    "meaning": "blackboard",
+    "hsk_level": 3
+  },
+  {
+    "no": 170,
+    "hanzi": "红绿灯",
+    "pinyin": "hóng-lǜdēng",
+    "type": "noun traffic",
+    "meaning": "light",
+    "hsk_level": 3
+  },
+  {
+    "no": 171,
+    "hanzi": "后来",
+    "pinyin": "hòulái",
+    "type": "noun later,",
+    "meaning": "afterwards",
+    "hsk_level": 3
+  },
+  {
+    "no": 172,
+    "hanzi": "后年",
+    "pinyin": "hòunián",
+    "type": "noun the year after",
+    "meaning": "next",
+    "hsk_level": 3
+  },
+  {
+    "no": 173,
+    "hanzi": "后天",
+    "pinyin": "hòutiān",
+    "type": "noun the day after",
+    "meaning": "tomorrow",
+    "hsk_level": 3
+  },
+  {
+    "no": 174,
+    "hanzi": "护照",
+    "pinyin": "hùzhào",
+    "type": "noun",
+    "meaning": "passport",
+    "hsk_level": 3
+  },
+  {
+    "no": 175,
+    "hanzi": "花园",
+    "pinyin": "huāyuán",
+    "type": "noun",
+    "meaning": "garden",
+    "hsk_level": 3
+  },
+  {
+    "no": 176,
+    "hanzi": "画家",
+    "pinyin": "huàjiā",
+    "type": "noun painter,",
+    "meaning": "artist",
+    "hsk_level": 3
+  },
+  {
+    "no": 177,
+    "hanzi": "欢迎",
+    "pinyin": "huānyíng",
+    "type": "verb to",
+    "meaning": "welcome",
+    "hsk_level": 3
+  },
+  {
+    "no": 178,
+    "hanzi": "还",
+    "pinyin": "huán",
+    "type": "verb to return, to give",
+    "meaning": "back",
+    "hsk_level": 3
+  },
+  {
+    "no": 179,
+    "hanzi": "环境",
+    "pinyin": "huánjìng",
+    "type": "noun",
+    "meaning": "environment",
+    "hsk_level": 3
+  },
+  {
+    "no": 180,
+    "hanzi": "换",
+    "pinyin": "huàn",
+    "type": "verb to exchange, to",
+    "meaning": "change",
+    "hsk_level": 3
+  },
+  {
+    "no": 181,
+    "hanzi": "黄⾊",
+    "pinyin": "huángsè",
+    "type": "noun",
+    "meaning": "yellow",
+    "hsk_level": 3
+  },
+  {
+    "no": 182,
+    "hanzi": "回答",
+    "pinyin": "huídá",
+    "type": "verb to",
+    "meaning": "answer",
+    "hsk_level": 3
+  },
+  {
+    "no": 183,
+    "hanzi": "会",
+    "pinyin": "huì",
+    "type": "noun",
+    "meaning": "meeting",
+    "hsk_level": 3
+  },
+  {
+    "no": 184,
+    "hanzi": "会议",
+    "pinyin": "huìyì",
+    "type": "noun",
+    "meaning": "meeting",
+    "hsk_level": 3
+  },
+  {
+    "no": 185,
+    "hanzi": "或",
+    "pinyin": "huò",
+    "type": "conjunction",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 186,
+    "hanzi": "或者",
+    "pinyin": "huòzhě",
+    "type": "conjunction",
+    "meaning": "or",
+    "hsk_level": 3
+  },
+  {
+    "no": 187,
+    "hanzi": "鸡",
+    "pinyin": "jī",
+    "type": "noun",
+    "meaning": "chicken",
+    "hsk_level": 3
+  },
+  {
+    "no": 188,
+    "hanzi": "⼏乎",
+    "pinyin": "jīhū",
+    "type": "adverb",
+    "meaning": "almost",
+    "hsk_level": 3
+  },
+  {
+    "no": 189,
+    "hanzi": "机会",
+    "pinyin": "jīhuì",
+    "type": "noun",
+    "meaning": "opportunity",
+    "hsk_level": 3
+  },
+  {
+    "no": 190,
+    "hanzi": "极",
+    "pinyin": "jí",
+    "type": "adverb",
+    "meaning": "extremely",
+    "hsk_level": 3
+  },
+  {
+    "no": 191,
+    "hanzi": "急",
+    "pinyin": "jí",
+    "type": "adjective 、 verb",
+    "meaning": "urgent; (to worry)",
+    "hsk_level": 3
+  },
+  {
+    "no": 192,
+    "hanzi": "记",
+    "pinyin": "jì",
+    "type": "verb to",
+    "meaning": "remember",
+    "hsk_level": 3
+  },
+  {
+    "no": 193,
+    "hanzi": "季",
+    "pinyin": "jì",
+    "type": "noun",
+    "meaning": "season",
+    "hsk_level": 3
+  },
+  {
+    "no": 194,
+    "hanzi": "季节",
+    "pinyin": "jìjié",
+    "type": "noun",
+    "meaning": "season",
+    "hsk_level": 3
+  },
+  {
+    "no": 195,
+    "hanzi": "加",
+    "pinyin": "jiā",
+    "type": "verb to",
+    "meaning": "add",
+    "hsk_level": 3
+  },
+  {
+    "no": 196,
+    "hanzi": "假期",
+    "pinyin": "jiàqī",
+    "type": "noun",
+    "meaning": "vacation",
+    "hsk_level": 3
+  },
+  {
+    "no": 197,
+    "hanzi": "坚持",
+    "pinyin": "jiānchí",
+    "type": "verb to",
+    "meaning": "persist",
+    "hsk_level": 3
+  },
+  {
+    "no": 198,
+    "hanzi": "检查",
+    "pinyin": "jiǎnchá",
+    "type": "verb to check, to",
+    "meaning": "inspect",
+    "hsk_level": 3
+  },
+  {
+    "no": 199,
+    "hanzi": "简单",
+    "pinyin": "jiǎndān",
+    "type": "adjective",
+    "meaning": "simple",
+    "hsk_level": 3
+  },
+  {
+    "no": 200,
+    "hanzi": "检票",
+    "pinyin": "jiǎnpiào",
+    "type": "verb ticket",
+    "meaning": "checking",
+    "hsk_level": 3
+  },
+  {
+    "no": 201,
+    "hanzi": "健康",
+    "pinyin": "jiànkāng",
+    "type": "adjective",
+    "meaning": "healthy",
+    "hsk_level": 3
+  },
+  {
+    "no": 202,
+    "hanzi": "见⾯",
+    "pinyin": "jiànmiàn",
+    "type": "verb to",
+    "meaning": "meet",
+    "hsk_level": 3
+  },
+  {
+    "no": 203,
+    "hanzi": "讲",
+    "pinyin": "jiǎng",
+    "type": "verb to speak, to",
+    "meaning": "talk",
+    "hsk_level": 3
+  },
+  {
+    "no": 204,
+    "hanzi": "⾓",
+    "pinyin": "jiǎo",
+    "type": "classifier measure word for fractions,",
+    "meaning": "angle,",
+    "hsk_level": 3
+  },
+  {
+    "no": 205,
+    "hanzi": "脚",
+    "pinyin": "jiǎo",
+    "type": "noun",
+    "meaning": "foot",
+    "hsk_level": 3
+  },
+  {
+    "no": 206,
+    "hanzi": "接",
+    "pinyin": "jiē",
+    "type": "verb to pick up, to",
+    "meaning": "receive",
+    "hsk_level": 3
+  },
+  {
+    "no": 207,
+    "hanzi": "街",
+    "pinyin": "jiē",
+    "type": "noun",
+    "meaning": "street",
+    "hsk_level": 3
+  },
+  {
+    "no": 208,
+    "hanzi": "节",
+    "pinyin": "jié",
+    "type": "classifier 、 noun",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 209,
+    "hanzi": "结婚",
+    "pinyin": "jiéhūn",
+    "type": "verb to",
+    "meaning": "marry",
+    "hsk_level": 3
+  },
+  {
+    "no": 210,
+    "hanzi": "节⽬",
+    "pinyin": "jiémù",
+    "type": "noun",
+    "meaning": "program",
+    "hsk_level": 3
+  },
+  {
+    "no": 211,
+    "hanzi": "节⽇",
+    "pinyin": "jiérì",
+    "type": "noun",
+    "meaning": "festival",
+    "hsk_level": 3
+  },
+  {
+    "no": 212,
+    "hanzi": "结束",
+    "pinyin": "jiéshù",
+    "type": "verb to",
+    "meaning": "end",
+    "hsk_level": 3
+  },
+  {
+    "no": 213,
+    "hanzi": "解决",
+    "pinyin": "jiějué",
+    "type": "verb to",
+    "meaning": "solve",
+    "hsk_level": 3
+  },
+  {
+    "no": 214,
+    "hanzi": "姐妹",
+    "pinyin": "jiěmèi",
+    "type": "noun",
+    "meaning": "sister",
+    "hsk_level": 3
+  },
+  {
+    "no": 215,
+    "hanzi": "借",
+    "pinyin": "jiè",
+    "type": "verb to",
+    "meaning": "borrow",
+    "hsk_level": 3
+  },
+  {
+    "no": 216,
+    "hanzi": "⽄",
+    "pinyin": "jīn",
+    "type": "classifier",
+    "meaning": "catty",
+    "hsk_level": 3
+  },
+  {
+    "no": 217,
+    "hanzi": "经过",
+    "pinyin": "jīngguò",
+    "type": "verb 、 noun to",
+    "meaning": "pass; process",
+    "hsk_level": 3
+  },
+  {
+    "no": 218,
+    "hanzi": "经理",
+    "pinyin": "jīnglǐ",
+    "type": "noun",
+    "meaning": "manager",
+    "hsk_level": 3
+  },
+  {
+    "no": 219,
+    "hanzi": "久",
+    "pinyin": "jiǔ",
+    "type": "adjective",
+    "meaning": "long",
+    "hsk_level": 3
+  },
+  {
+    "no": 220,
+    "hanzi": "酒",
+    "pinyin": "jiǔ",
+    "type": "noun",
+    "meaning": "alcohol",
+    "hsk_level": 3
+  },
+  {
+    "no": 221,
+    "hanzi": "旧",
+    "pinyin": "jiù",
+    "type": "adjective",
+    "meaning": "old",
+    "hsk_level": 3
+  },
+  {
+    "no": 222,
+    "hanzi": "句",
+    "pinyin": "jù",
+    "type": "classifier measure word of",
+    "meaning": "sentence",
+    "hsk_level": 3
+  },
+  {
+    "no": 223,
+    "hanzi": "句⼦",
+    "pinyin": "jùzi",
+    "type": "noun",
+    "meaning": "sentence",
+    "hsk_level": 3
+  },
+  {
+    "no": 224,
+    "hanzi": "决定",
+    "pinyin": "juédìng",
+    "type": "verb 、 noun to",
+    "meaning": "decide; decision",
+    "hsk_level": 3
+  },
+  {
+    "no": 225,
+    "hanzi": "卡",
+    "pinyin": "kǎ",
+    "type": "noun",
+    "meaning": "card",
+    "hsk_level": 3
+  },
+  {
+    "no": 226,
+    "hanzi": "开花",
+    "pinyin": "kāihuā",
+    "type": "verb to",
+    "meaning": "bloom",
+    "hsk_level": 3
+  },
+  {
+    "no": 227,
+    "hanzi": "开会",
+    "pinyin": "kāihuì",
+    "type": "verb to have a",
+    "meaning": "meeting",
+    "hsk_level": 3
+  },
+  {
+    "no": 228,
+    "hanzi": "开机",
+    "pinyin": "kāijī",
+    "type": "verb to turn on",
+    "meaning": "device",
+    "hsk_level": 3
+  },
+  {
+    "no": 229,
+    "hanzi": "开⼼",
+    "pinyin": "kāixīn",
+    "type": "adjective",
+    "meaning": "happy",
+    "hsk_level": 3
+  },
+  {
+    "no": 230,
+    "hanzi": "看来",
+    "pinyin": "kànlái",
+    "type": "verb it seems, it",
+    "meaning": "appears",
+    "hsk_level": 3
+  },
+  {
+    "no": 231,
+    "hanzi": "可",
+    "pinyin": "kě",
+    "type": "conjunction",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 232,
+    "hanzi": "渴",
+    "pinyin": "kě",
+    "type": "adjective",
+    "meaning": "thirsty",
+    "hsk_level": 3
+  },
+  {
+    "no": 233,
+    "hanzi": "可爱",
+    "pinyin": "kě’ài",
+    "type": "adjective",
+    "meaning": "lovely",
+    "hsk_level": 3
+  },
+  {
+    "no": 234,
+    "hanzi": "可是",
+    "pinyin": "kěshì",
+    "type": "conjunction",
+    "meaning": "but",
+    "hsk_level": 3
+  },
+  {
+    "no": 235,
+    "hanzi": "刻",
+    "pinyin": "kè",
+    "type": "classifier",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 236,
+    "hanzi": "课本",
+    "pinyin": "kèběn",
+    "type": "noun",
+    "meaning": "textbook",
+    "hsk_level": 3
+  },
+  {
+    "no": 237,
+    "hanzi": "客⼈",
+    "pinyin": "kèrén",
+    "type": "noun",
+    "meaning": "guest",
+    "hsk_level": 3
+  },
+  {
+    "no": 238,
+    "hanzi": "课⽂",
+    "pinyin": "kèwén",
+    "type": "noun",
+    "meaning": "text",
+    "hsk_level": 3
+  },
+  {
+    "no": 239,
+    "hanzi": "空调",
+    "pinyin": "kōngtiáo",
+    "type": "noun air",
+    "meaning": "conditioner",
+    "hsk_level": 3
+  },
+  {
+    "no": 240,
+    "hanzi": "哭",
+    "pinyin": "kū",
+    "type": "verb to",
+    "meaning": "cry",
+    "hsk_level": 3
+  },
+  {
+    "no": 241,
+    "hanzi": "筷⼦",
+    "pinyin": "kuàizi",
+    "type": "noun",
+    "meaning": "chopsticks",
+    "hsk_level": 3
+  },
+  {
+    "no": 242,
+    "hanzi": "矿泉⽔",
+    "pinyin": "kuàngquánshuǐnoun",
+    "type": "mineral",
+    "meaning": "water",
+    "hsk_level": 3
+  },
+  {
+    "no": 243,
+    "hanzi": "来⾃",
+    "pinyin": "láizì",
+    "type": "verb to come",
+    "meaning": "from",
+    "hsk_level": 3
+  },
+  {
+    "no": 244,
+    "hanzi": "蓝",
+    "pinyin": "lán",
+    "type": "adjective",
+    "meaning": "blue",
+    "hsk_level": 3
+  },
+  {
+    "no": 245,
+    "hanzi": "⽼",
+    "pinyin": "lǎo",
+    "type": "adjective",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 246,
+    "hanzi": "⽼⼈",
+    "pinyin": "lǎorén",
+    "type": "noun elderly",
+    "meaning": "person",
+    "hsk_level": 3
+  },
+  {
+    "no": 247,
+    "hanzi": "离开",
+    "pinyin": "líkāi",
+    "type": "verb to",
+    "meaning": "leave",
+    "hsk_level": 3
+  },
+  {
+    "no": 248,
+    "hanzi": "礼物",
+    "pinyin": "lǐwù",
+    "type": "noun",
+    "meaning": "gift",
+    "hsk_level": 3
+  },
+  {
+    "no": 249,
+    "hanzi": "历史",
+    "pinyin": "lìshǐ",
+    "type": "noun",
+    "meaning": "history",
+    "hsk_level": 3
+  },
+  {
+    "no": 250,
+    "hanzi": "脸",
+    "pinyin": "liǎn",
+    "type": "noun",
+    "meaning": "face",
+    "hsk_level": 3
+  },
+  {
+    "no": 251,
+    "hanzi": "练",
+    "pinyin": "liàn",
+    "type": "verb to",
+    "meaning": "practice",
+    "hsk_level": 3
+  },
+  {
+    "no": 252,
+    "hanzi": "练习",
+    "pinyin": "liànxí",
+    "type": "verb 、 noun to",
+    "meaning": "practice; exercise",
+    "hsk_level": 3
+  },
+  {
+    "no": 253,
+    "hanzi": "凉快",
+    "pinyin": "liángkuai",
+    "type": "adjective",
+    "meaning": "cool",
+    "hsk_level": 3
+  },
+  {
+    "no": 254,
+    "hanzi": "辆",
+    "pinyin": "liàng",
+    "type": "classifier measure word for",
+    "meaning": "vehicles",
+    "hsk_level": 3
+  },
+  {
+    "no": 255,
+    "hanzi": "聊",
+    "pinyin": "liáo",
+    "type": "verb to",
+    "meaning": "chat",
+    "hsk_level": 3
+  },
+  {
+    "no": 256,
+    "hanzi": "聊天⼉",
+    "pinyin": "liáotiānr",
+    "type": "verb to",
+    "meaning": "chat",
+    "hsk_level": 3
+  },
+  {
+    "no": 257,
+    "hanzi": "了解",
+    "pinyin": "liǎojiě",
+    "type": "verb to",
+    "meaning": "understand",
+    "hsk_level": 3
+  },
+  {
+    "no": 258,
+    "hanzi": "邻居",
+    "pinyin": "línjū",
+    "type": "noun",
+    "meaning": "neighbor",
+    "hsk_level": 3
+  },
+  {
+    "no": 259,
+    "hanzi": "留学",
+    "pinyin": "liúxué",
+    "type": "verb to study",
+    "meaning": "abroad",
+    "hsk_level": 3
+  },
+  {
+    "no": 260,
+    "hanzi": "留学⽣",
+    "pinyin": "liúxuéshēng",
+    "type": "noun overseas",
+    "meaning": "student",
+    "hsk_level": 3
+  },
+  {
+    "no": 261,
+    "hanzi": "楼梯",
+    "pinyin": "lóutī",
+    "type": "noun",
+    "meaning": "stairs",
+    "hsk_level": 3
+  },
+  {
+    "no": 262,
+    "hanzi": "路边",
+    "pinyin": "lùbiān",
+    "type": "noun",
+    "meaning": "roadside",
+    "hsk_level": 3
+  },
+  {
+    "no": 263,
+    "hanzi": "路⼜",
+    "pinyin": "lùkǒu",
+    "type": "noun",
+    "meaning": "intersection",
+    "hsk_level": 3
+  },
+  {
+    "no": 264,
+    "hanzi": "马",
+    "pinyin": "mǎ",
+    "type": "noun",
+    "meaning": "horse",
+    "hsk_level": 3
+  },
+  {
+    "no": 265,
+    "hanzi": "马路",
+    "pinyin": "mǎlù",
+    "type": "noun",
+    "meaning": "road",
+    "hsk_level": 3
+  },
+  {
+    "no": 266,
+    "hanzi": "马上",
+    "pinyin": "mǎshàng",
+    "type": "adverb",
+    "meaning": "immediately",
+    "hsk_level": 3
+  },
+  {
+    "no": 267,
+    "hanzi": "满意",
+    "pinyin": "mǎnyì",
+    "type": "verb",
+    "meaning": "satisfied",
+    "hsk_level": 3
+  },
+  {
+    "no": 268,
+    "hanzi": "⽑",
+    "pinyin": "máo",
+    "type": "classifier",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 269,
+    "hanzi": "⽶",
+    "pinyin": "mǐ",
+    "type": "classifier",
+    "meaning": "meter",
+    "hsk_level": 3
+  },
+  {
+    "no": 270,
+    "hanzi": "⾯前",
+    "pinyin": "miànqián",
+    "type": "noun in front",
+    "meaning": "of",
+    "hsk_level": 3
+  },
+  {
+    "no": 271,
+    "hanzi": "明⽩",
+    "pinyin": "míngbai",
+    "type": "adjective 、 verb to",
+    "meaning": "understand; clear",
+    "hsk_level": 3
+  },
+  {
+    "no": 272,
+    "hanzi": "名单",
+    "pinyin": "míngdān",
+    "type": "noun name",
+    "meaning": "list",
+    "hsk_level": 3
+  },
+  {
+    "no": 273,
+    "hanzi": "名⼈",
+    "pinyin": "míngrén",
+    "type": "noun famous",
+    "meaning": "person",
+    "hsk_level": 3
+  },
+  {
+    "no": 274,
+    "hanzi": "南",
+    "pinyin": "nán",
+    "type": "noun",
+    "meaning": "south",
+    "hsk_level": 3
+  },
+  {
+    "no": 275,
+    "hanzi": "难",
+    "pinyin": "nán",
+    "type": "adjective",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 276,
+    "hanzi": "南⽅",
+    "pinyin": "nánfāng",
+    "type": "noun",
+    "meaning": "south",
+    "hsk_level": 3
+  },
+  {
+    "no": 277,
+    "hanzi": "难过",
+    "pinyin": "nánguò",
+    "type": "adjective",
+    "meaning": "sad",
+    "hsk_level": 3
+  },
+  {
+    "no": 278,
+    "hanzi": "难看",
+    "pinyin": "nánkàn",
+    "type": "adjective",
+    "meaning": "ugly",
+    "hsk_level": 3
+  },
+  {
+    "no": 279,
+    "hanzi": "男⼈",
+    "pinyin": "nánrén",
+    "type": "noun",
+    "meaning": "man",
+    "hsk_level": 3
+  },
+  {
+    "no": 280,
+    "hanzi": "男⽣",
+    "pinyin": "nánshēng",
+    "type": "noun boy",
+    "meaning": "student",
+    "hsk_level": 3
+  },
+  {
+    "no": 281,
+    "hanzi": "难题",
+    "pinyin": "nántí",
+    "type": "noun difficult",
+    "meaning": "problem",
+    "hsk_level": 3
+  },
+  {
+    "no": 282,
+    "hanzi": "难听",
+    "pinyin": "nántīng",
+    "type": "adjective unpleasant to",
+    "meaning": "hear",
+    "hsk_level": 3
+  },
+  {
+    "no": 283,
+    "hanzi": "年级",
+    "pinyin": "niánjí",
+    "type": "noun",
+    "meaning": "grade",
+    "hsk_level": 3
+  },
+  {
+    "no": 284,
+    "hanzi": "年轻",
+    "pinyin": "niánqīng",
+    "type": "adjective",
+    "meaning": "young",
+    "hsk_level": 3
+  },
+  {
+    "no": 285,
+    "hanzi": "⽜",
+    "pinyin": "niú",
+    "type": "noun",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 286,
+    "hanzi": "努⼒",
+    "pinyin": "nǔlì",
+    "type": "verb 、 adjective to work",
+    "meaning": "hard; hardworking",
+    "hsk_level": 3
+  },
+  {
+    "no": 287,
+    "hanzi": "⼥⼈",
+    "pinyin": "nǚrén",
+    "type": "noun",
+    "meaning": "woman",
+    "hsk_level": 3
+  },
+  {
+    "no": 288,
+    "hanzi": "⼥⽣",
+    "pinyin": "nǚshēng",
+    "type": "noun girl",
+    "meaning": "student",
+    "hsk_level": 3
+  },
+  {
+    "no": 289,
+    "hanzi": "爬",
+    "pinyin": "pá",
+    "type": "verb to",
+    "meaning": "climb",
+    "hsk_level": 3
+  },
+  {
+    "no": 290,
+    "hanzi": "怕",
+    "pinyin": "pà",
+    "type": "verb",
+    "meaning": "、（ adverb ） to fear; (perhaps)",
+    "hsk_level": 3
+  },
+  {
+    "no": 291,
+    "hanzi": "拍照",
+    "pinyin": "pāizhào",
+    "type": "verb to take a",
+    "meaning": "photo",
+    "hsk_level": 3
+  },
+  {
+    "no": 292,
+    "hanzi": "盘⼦",
+    "pinyin": "pánzi",
+    "type": "noun",
+    "meaning": "plate",
+    "hsk_level": 3
+  },
+  {
+    "no": 293,
+    "hanzi": "胖",
+    "pinyin": "pàng",
+    "type": "adjective",
+    "meaning": "fat",
+    "hsk_level": 3
+  },
+  {
+    "no": 294,
+    "hanzi": "啤酒",
+    "pinyin": "píjiǔ",
+    "type": "noun",
+    "meaning": "beer",
+    "hsk_level": 3
+  },
+  {
+    "no": 295,
+    "hanzi": "平时",
+    "pinyin": "píngshí",
+    "type": "noun",
+    "meaning": "usually",
+    "hsk_level": 3
+  },
+  {
+    "no": 296,
+    "hanzi": "瓶⼦",
+    "pinyin": "píngzi",
+    "type": "noun",
+    "meaning": "bottle",
+    "hsk_level": 3
+  },
+  {
+    "no": 297,
+    "hanzi": "骑",
+    "pinyin": "qí",
+    "type": "verb to",
+    "meaning": "ride",
+    "hsk_level": 3
+  },
+  {
+    "no": 298,
+    "hanzi": "奇怪",
+    "pinyin": "qíguài",
+    "type": "adjective",
+    "meaning": "strange",
+    "hsk_level": 3
+  },
+  {
+    "no": 299,
+    "hanzi": "其实",
+    "pinyin": "qíshí",
+    "type": "adverb",
+    "meaning": "actually",
+    "hsk_level": 3
+  },
+  {
+    "no": 300,
+    "hanzi": "其他",
+    "pinyin": "qítā",
+    "type": "pronoun",
+    "meaning": "other",
+    "hsk_level": 3
+  },
+  {
+    "no": 301,
+    "hanzi": "起",
+    "pinyin": "qǐ",
+    "type": "verb",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 302,
+    "hanzi": "起飞",
+    "pinyin": "qǐfēi",
+    "type": "verb to take",
+    "meaning": "off",
+    "hsk_level": 3
+  },
+  {
+    "no": 303,
+    "hanzi": "汽车",
+    "pinyin": "qìchē",
+    "type": "noun",
+    "meaning": "car",
+    "hsk_level": 3
+  },
+  {
+    "no": 304,
+    "hanzi": "铅笔",
+    "pinyin": "qiānbǐ",
+    "type": "noun",
+    "meaning": "pencil",
+    "hsk_level": 3
+  },
+  {
+    "no": 305,
+    "hanzi": "前年",
+    "pinyin": "qiánnián",
+    "type": "noun the year before",
+    "meaning": "last",
+    "hsk_level": 3
+  },
+  {
+    "no": 306,
+    "hanzi": "前天",
+    "pinyin": "qiántiān",
+    "type": "noun the day before",
+    "meaning": "yesterday",
+    "hsk_level": 3
+  },
+  {
+    "no": 307,
+    "hanzi": "清楚",
+    "pinyin": "qīngchu",
+    "type": "adjective 、 verb clear,",
+    "meaning": "obvious; to understand",
+    "hsk_level": 3
+  },
+  {
+    "no": 308,
+    "hanzi": "请假",
+    "pinyin": "qǐngjià",
+    "type": "verb to ask for",
+    "meaning": "leave",
+    "hsk_level": 3
+  },
+  {
+    "no": 309,
+    "hanzi": "请客",
+    "pinyin": "qǐngkè",
+    "type": "verb to invite guests, to treat",
+    "meaning": "someone",
+    "hsk_level": 3
+  },
+  {
+    "no": 310,
+    "hanzi": "秋天",
+    "pinyin": "qiūtiān",
+    "type": "noun",
+    "meaning": "autumn",
+    "hsk_level": 3
+  },
+  {
+    "no": 311,
+    "hanzi": "球场",
+    "pinyin": "qiúchǎng",
+    "type": "noun sports field,",
+    "meaning": "court",
+    "hsk_level": 3
+  },
+  {
+    "no": 312,
+    "hanzi": "裙⼦",
+    "pinyin": "qúnzi",
+    "type": "noun",
+    "meaning": "skirt",
+    "hsk_level": 3
+  },
+  {
+    "no": 313,
+    "hanzi": "然后",
+    "pinyin": "ránhòu",
+    "type": "conjunction then,",
+    "meaning": "afterwards",
+    "hsk_level": 3
+  },
+  {
+    "no": 314,
+    "hanzi": "热情",
+    "pinyin": "rèqíng",
+    "type": "adjective",
+    "meaning": "enthusiastic",
+    "hsk_level": 3
+  },
+  {
+    "no": 315,
+    "hanzi": "认得",
+    "pinyin": "rènde",
+    "type": "verb to recognize, to",
+    "meaning": "know",
+    "hsk_level": 3
+  },
+  {
+    "no": 316,
+    "hanzi": "认为",
+    "pinyin": "rènwéi",
+    "type": "verb to think, to",
+    "meaning": "consider",
+    "hsk_level": 3
+  },
+  {
+    "no": 317,
+    "hanzi": "认真",
+    "pinyin": "rènzhēn",
+    "type": "adjective serious,",
+    "meaning": "earnest",
+    "hsk_level": 3
+  },
+  {
+    "no": 318,
+    "hanzi": "容易",
+    "pinyin": "róngyì",
+    "type": "adjective",
+    "meaning": "easy",
+    "hsk_level": 3
+  },
+  {
+    "no": 319,
+    "hanzi": "如果",
+    "pinyin": "rúguǒ",
+    "type": "conjunction",
+    "meaning": "if",
+    "hsk_level": 3
+  },
+  {
+    "no": 320,
+    "hanzi": "伞",
+    "pinyin": "sǎn",
+    "type": "noun",
+    "meaning": "umbrella",
+    "hsk_level": 3
+  },
+  {
+    "no": 321,
+    "hanzi": "扫",
+    "pinyin": "sǎo",
+    "type": "verb to",
+    "meaning": "sweep",
+    "hsk_level": 3
+  },
+  {
+    "no": 322,
+    "hanzi": "沙发",
+    "pinyin": "shāfā",
+    "type": "noun",
+    "meaning": "sofa",
+    "hsk_level": 3
+  },
+  {
+    "no": 323,
+    "hanzi": "⼭",
+    "pinyin": "shān",
+    "type": "noun",
+    "meaning": "mountain",
+    "hsk_level": 3
+  },
+  {
+    "no": 324,
+    "hanzi": "上⾐",
+    "pinyin": "shàngyī",
+    "type": "noun jacket, top",
+    "meaning": "garment",
+    "hsk_level": 3
+  },
+  {
+    "no": 325,
+    "hanzi": "勺⼦",
+    "pinyin": "sháozi",
+    "type": "noun",
+    "meaning": "spoon",
+    "hsk_level": 3
+  },
+  {
+    "no": 326,
+    "hanzi": "⾝边",
+    "pinyin": "shēnbiān",
+    "type": "noun by",
+    "meaning": "one's side",
+    "hsk_level": 3
+  },
+  {
+    "no": 327,
+    "hanzi": "⾝⾼",
+    "pinyin": "shēngāo",
+    "type": "noun",
+    "meaning": "height",
+    "hsk_level": 3
+  },
+  {
+    "no": 328,
+    "hanzi": "声",
+    "pinyin": "shēng",
+    "type": "noun 、 classifier sound,",
+    "meaning": "voice; measure word for",
+    "hsk_level": 3
+  },
+  {
+    "no": 329,
+    "hanzi": "⽣活",
+    "pinyin": "shēnghuó",
+    "type": "noun 、 verb",
+    "meaning": "life; to live",
+    "hsk_level": 3
+  },
+  {
+    "no": 330,
+    "hanzi": "⽣⽓",
+    "pinyin": "shēngqì",
+    "type": "verb to get",
+    "meaning": "angry",
+    "hsk_level": 3
+  },
+  {
+    "no": 331,
+    "hanzi": "声⾳",
+    "pinyin": "shēngyīn",
+    "type": "noun",
+    "meaning": "sound",
+    "hsk_level": 3
+  },
+  {
+    "no": 332,
+    "hanzi": "市",
+    "pinyin": "shì",
+    "type": "noun",
+    "meaning": "city",
+    "hsk_level": 3
+  },
+  {
+    "no": 333,
+    "hanzi": "试",
+    "pinyin": "shì",
+    "type": "verb to",
+    "meaning": "try",
+    "hsk_level": 3
+  },
+  {
+    "no": 334,
+    "hanzi": "室",
+    "pinyin": "shì",
+    "type": "noun",
+    "meaning": "room",
+    "hsk_level": 3
+  },
+  {
+    "no": 335,
+    "hanzi": "世界",
+    "pinyin": "shìjiè",
+    "type": "noun",
+    "meaning": "world",
+    "hsk_level": 3
+  },
+  {
+    "no": 336,
+    "hanzi": "收",
+    "pinyin": "shōu",
+    "type": "verb to",
+    "meaning": "receive",
+    "hsk_level": 3
+  },
+  {
+    "no": 337,
+    "hanzi": "收到",
+    "pinyin": "shōudào",
+    "type": "verb to",
+    "meaning": "receive",
+    "hsk_level": 3
+  },
+  {
+    "no": 338,
+    "hanzi": "受",
+    "pinyin": "shòu",
+    "type": "verb to receive, to be",
+    "meaning": "affected",
+    "hsk_level": 3
+  },
+  {
+    "no": 339,
+    "hanzi": "瘦",
+    "pinyin": "shòu",
+    "type": "adjective thin,",
+    "meaning": "slim",
+    "hsk_level": 3
+  },
+  {
+    "no": 340,
+    "hanzi": "受到",
+    "pinyin": "shòudào",
+    "type": "verb to receive, to be subjected",
+    "meaning": "to",
+    "hsk_level": 3
+  },
+  {
+    "no": 341,
+    "hanzi": "叔叔",
+    "pinyin": "shūshu",
+    "type": "noun",
+    "meaning": "uncle",
+    "hsk_level": 3
+  },
+  {
+    "no": 342,
+    "hanzi": "树",
+    "pinyin": "shù",
+    "type": "noun",
+    "meaning": "tree",
+    "hsk_level": 3
+  },
+  {
+    "no": 343,
+    "hanzi": "数学",
+    "pinyin": "shùxué",
+    "type": "noun",
+    "meaning": "mathematics",
+    "hsk_level": 3
+  },
+  {
+    "no": 344,
+    "hanzi": "刷",
+    "pinyin": "shuā",
+    "type": "verb to brush, to",
+    "meaning": "scrub",
+    "hsk_level": 3
+  },
+  {
+    "no": 345,
+    "hanzi": "双",
+    "pinyin": "shuāng",
+    "type": "classifier pair, measure word for",
+    "meaning": "pairs",
+    "hsk_level": 3
+  },
+  {
+    "no": 346,
+    "hanzi": "⽔平",
+    "pinyin": "shuǐpíng",
+    "type": "noun level,",
+    "meaning": "standard",
+    "hsk_level": 3
+  },
+  {
+    "no": 347,
+    "hanzi": "司机",
+    "pinyin": "sījī",
+    "type": "noun",
+    "meaning": "driver",
+    "hsk_level": 3
+  },
+  {
+    "no": 348,
+    "hanzi": "四季",
+    "pinyin": "sìjì",
+    "type": "noun four",
+    "meaning": "seasons",
+    "hsk_level": 3
+  },
+  {
+    "no": 349,
+    "hanzi": "太阳",
+    "pinyin": "tàiyáng",
+    "type": "noun",
+    "meaning": "sun",
+    "hsk_level": 3
+  },
+  {
+    "no": 350,
+    "hanzi": "糖",
+    "pinyin": "táng",
+    "type": "noun candy,",
+    "meaning": "sugar",
+    "hsk_level": 3
+  },
+  {
+    "no": 351,
+    "hanzi": "特别",
+    "pinyin": "tèbié",
+    "type": "adjective 、 adverb",
+    "meaning": "special; particularly",
+    "hsk_level": 3
+  },
+  {
+    "no": 352,
+    "hanzi": "提⾼",
+    "pinyin": "tígāo",
+    "type": "verb to raise, to",
+    "meaning": "improve",
+    "hsk_level": 3
+  },
+  {
+    "no": 353,
+    "hanzi": "体育",
+    "pinyin": "tǐyù",
+    "type": "noun physical",
+    "meaning": "education",
+    "hsk_level": 3
+  },
+  {
+    "no": 354,
+    "hanzi": "体育馆",
+    "pinyin": "tǐyùguǎn",
+    "type": "noun",
+    "meaning": "gymnasium",
+    "hsk_level": 3
+  },
+  {
+    "no": 355,
+    "hanzi": "甜",
+    "pinyin": "tián",
+    "type": "adjective",
+    "meaning": "sweet",
+    "hsk_level": 3
+  },
+  {
+    "no": 356,
+    "hanzi": "跳",
+    "pinyin": "tiào",
+    "type": "verb to",
+    "meaning": "jump",
+    "hsk_level": 3
+  },
+  {
+    "no": 357,
+    "hanzi": "听说",
+    "pinyin": "tīngshuō",
+    "type": "verb to hear",
+    "meaning": "said",
+    "hsk_level": 3
+  },
+  {
+    "no": 358,
+    "hanzi": "挺",
+    "pinyin": "tǐng",
+    "type": "adverb",
+    "meaning": "、（ verb ） quite, rather; (to endure)",
+    "hsk_level": 3
+  },
+  {
+    "no": 359,
+    "hanzi": "同事",
+    "pinyin": "tóngshì",
+    "type": "noun",
+    "meaning": "colleague",
+    "hsk_level": 3
+  },
+  {
+    "no": 360,
+    "hanzi": "同意",
+    "pinyin": "tóngyì",
+    "type": "verb to",
+    "meaning": "agree",
+    "hsk_level": 3
+  },
+  {
+    "no": 361,
+    "hanzi": "头发",
+    "pinyin": "tóufa",
+    "type": "noun",
+    "meaning": "hair",
+    "hsk_level": 3
+  },
+  {
+    "no": 362,
+    "hanzi": "突然",
+    "pinyin": "tūrán",
+    "type": "adjective",
+    "meaning": "sudden",
+    "hsk_level": 3
+  },
+  {
+    "no": 363,
+    "hanzi": "图书馆",
+    "pinyin": "túshūguǎn",
+    "type": "noun",
+    "meaning": "library",
+    "hsk_level": 3
+  },
+  {
+    "no": 364,
+    "hanzi": "腿",
+    "pinyin": "tuǐ",
+    "type": "noun",
+    "meaning": "leg",
+    "hsk_level": 3
+  },
+  {
+    "no": 365,
+    "hanzi": "外地",
+    "pinyin": "wàidì",
+    "type": "noun other",
+    "meaning": "place",
+    "hsk_level": 3
+  },
+  {
+    "no": 366,
+    "hanzi": "外卖",
+    "pinyin": "wàimài",
+    "type": "verb 、 noun",
+    "meaning": "takeaway; to order takeout",
+    "hsk_level": 3
+  },
+  {
+    "no": 367,
+    "hanzi": "外语",
+    "pinyin": "wàiyǔ",
+    "type": "noun foreign",
+    "meaning": "language",
+    "hsk_level": 3
+  },
+  {
+    "no": 368,
+    "hanzi": "完成",
+    "pinyin": "wánchéng",
+    "type": "verb to",
+    "meaning": "complete",
+    "hsk_level": 3
+  },
+  {
+    "no": 369,
+    "hanzi": "碗",
+    "pinyin": "wǎn",
+    "type": "noun",
+    "meaning": "bowl",
+    "hsk_level": 3
+  },
+  {
+    "no": 370,
+    "hanzi": "晚点",
+    "pinyin": "wǎndiǎn",
+    "type": "verb to be",
+    "meaning": "late",
+    "hsk_level": 3
+  },
+  {
+    "no": 371,
+    "hanzi": "晚会",
+    "pinyin": "wǎnhuì",
+    "type": "noun evening",
+    "meaning": "party",
+    "hsk_level": 3
+  },
+  {
+    "no": 372,
+    "hanzi": "⽹球",
+    "pinyin": "wǎngqiú",
+    "type": "noun",
+    "meaning": "tennis",
+    "hsk_level": 3
+  },
+  {
+    "no": 373,
+    "hanzi": "⽹站",
+    "pinyin": "wǎngzhàn",
+    "type": "noun",
+    "meaning": "website",
+    "hsk_level": 3
+  },
+  {
+    "no": 374,
+    "hanzi": "忘记",
+    "pinyin": "wàngjì",
+    "type": "verb to",
+    "meaning": "forget",
+    "hsk_level": 3
+  },
+  {
+    "no": 375,
+    "hanzi": "为",
+    "pinyin": "wèi",
+    "type": "preposition for, because of,",
+    "meaning": "to",
+    "hsk_level": 3
+  },
+  {
+    "no": 376,
+    "hanzi": "为了",
+    "pinyin": "wèile",
+    "type": "preposition in order",
+    "meaning": "to",
+    "hsk_level": 3
+  },
+  {
+    "no": 377,
+    "hanzi": "卫⽣间",
+    "pinyin": "wèishēngjiān",
+    "type": "noun bathroom,",
+    "meaning": "restroom",
+    "hsk_level": 3
+  },
+  {
+    "no": 378,
+    "hanzi": "⽂化",
+    "pinyin": "wénhuà",
+    "type": "noun",
+    "meaning": "culture",
+    "hsk_level": 3
+  },
+  {
+    "no": 379,
+    "hanzi": "屋⼦",
+    "pinyin": "wūzi",
+    "type": "noun room,",
+    "meaning": "house",
+    "hsk_level": 3
+  },
+  {
+    "no": 380,
+    "hanzi": "西",
+    "pinyin": "xī",
+    "type": "noun",
+    "meaning": "west",
+    "hsk_level": 3
+  },
+  {
+    "no": 381,
+    "hanzi": "西北",
+    "pinyin": "xīběi",
+    "type": "noun",
+    "meaning": "northwest",
+    "hsk_level": 3
+  },
+  {
+    "no": 382,
+    "hanzi": "西⽅",
+    "pinyin": "xīfāng",
+    "type": "noun",
+    "meaning": "west",
+    "hsk_level": 3
+  },
+  {
+    "no": 383,
+    "hanzi": "西⽠",
+    "pinyin": "xīguā",
+    "type": "noun",
+    "meaning": "watermelon",
+    "hsk_level": 3
+  },
+  {
+    "no": 384,
+    "hanzi": "西南",
+    "pinyin": "xīnán",
+    "type": "noun",
+    "meaning": "southwest",
+    "hsk_level": 3
+  },
+  {
+    "no": 385,
+    "hanzi": "习惯",
+    "pinyin": "xíguàn",
+    "type": "verb 、 noun to be used",
+    "meaning": "to; habit",
+    "hsk_level": 3
+  },
+  {
+    "no": 386,
+    "hanzi": "喜爱",
+    "pinyin": "xǐ’ài",
+    "type": "verb",
+    "meaning": "to like, to love",
+    "hsk_level": 3
+  },
+  {
+    "no": 387,
+    "hanzi": "洗⾐机",
+    "pinyin": "xǐyījī",
+    "type": "noun washing",
+    "meaning": "machine",
+    "hsk_level": 3
+  },
+  {
+    "no": 388,
+    "hanzi": "洗澡",
+    "pinyin": "xǐzǎo",
+    "type": "verb to take a",
+    "meaning": "bath",
+    "hsk_level": 3
+  },
+  {
+    "no": 389,
+    "hanzi": "夏天",
+    "pinyin": "xiàtiān",
+    "type": "noun",
+    "meaning": "summer",
+    "hsk_level": 3
+  },
+  {
+    "no": 390,
+    "hanzi": "先",
+    "pinyin": "xiān",
+    "type": "adverb first,",
+    "meaning": "before",
+    "hsk_level": 3
+  },
+  {
+    "no": 391,
+    "hanzi": "⾹蕉",
+    "pinyin": "xiāngjiāo",
+    "type": "noun",
+    "meaning": "banana",
+    "hsk_level": 3
+  },
+  {
+    "no": 392,
+    "hanzi": "相信",
+    "pinyin": "xiāngxìn",
+    "type": "verb to",
+    "meaning": "believe",
+    "hsk_level": 3
+  },
+  {
+    "no": 393,
+    "hanzi": "箱⼦",
+    "pinyin": "xiāngzi",
+    "type": "noun box,",
+    "meaning": "case",
+    "hsk_level": 3
+  },
+  {
+    "no": 394,
+    "hanzi": "向",
+    "pinyin": "xiàng",
+    "type": "verb 、 prepositionto face, to turn",
+    "meaning": "toward; toward, to",
+    "hsk_level": 3
+  },
+  {
+    "no": 395,
+    "hanzi": "像",
+    "pinyin": "xiàng",
+    "type": "verb",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 396,
+    "hanzi": "相机",
+    "pinyin": "xiàngjī",
+    "type": "noun",
+    "meaning": "camera",
+    "hsk_level": 3
+  },
+  {
+    "no": 397,
+    "hanzi": "⼩区",
+    "pinyin": "xiǎoqū",
+    "type": "noun residential",
+    "meaning": "community",
+    "hsk_level": 3
+  },
+  {
+    "no": 398,
+    "hanzi": "⼩⼼",
+    "pinyin": "xiǎoxīn",
+    "type": "verb 、 adjective to be",
+    "meaning": "careful; careful",
+    "hsk_level": 3
+  },
+  {
+    "no": 399,
+    "hanzi": "校园",
+    "pinyin": "xiàoyuán",
+    "type": "noun",
+    "meaning": "campus",
+    "hsk_level": 3
+  },
+  {
+    "no": 400,
+    "hanzi": "校长",
+    "pinyin": "xiàozhǎng",
+    "type": "noun principal,",
+    "meaning": "headmaster",
+    "hsk_level": 3
+  },
+  {
+    "no": 401,
+    "hanzi": "鞋",
+    "pinyin": "xié",
+    "type": "noun",
+    "meaning": "shoe",
+    "hsk_level": 3
+  },
+  {
+    "no": 402,
+    "hanzi": "⼼⾥",
+    "pinyin": "xīnlǐ",
+    "type": "noun heart,",
+    "meaning": "mind",
+    "hsk_level": 3
+  },
+  {
+    "no": 403,
+    "hanzi": "新年",
+    "pinyin": "xīnnián",
+    "type": "noun New",
+    "meaning": "Year",
+    "hsk_level": 3
+  },
+  {
+    "no": 404,
+    "hanzi": "新闻",
+    "pinyin": "xīnwén",
+    "type": "noun",
+    "meaning": "news",
+    "hsk_level": 3
+  },
+  {
+    "no": 405,
+    "hanzi": "新鲜",
+    "pinyin": "xīnxiān",
+    "type": "adjective",
+    "meaning": "fresh",
+    "hsk_level": 3
+  },
+  {
+    "no": 406,
+    "hanzi": "信",
+    "pinyin": "xìn",
+    "type": "verb 、 noun to",
+    "meaning": "believe; letter",
+    "hsk_level": 3
+  },
+  {
+    "no": 407,
+    "hanzi": "信⽤卡",
+    "pinyin": "xìnyòngkǎ",
+    "type": "noun credit",
+    "meaning": "card",
+    "hsk_level": 3
+  },
+  {
+    "no": 408,
+    "hanzi": "⾏",
+    "pinyin": "xíng",
+    "type": "verb 、 adjective to",
+    "meaning": "go; okay, permissible",
+    "hsk_level": 3
+  },
+  {
+    "no": 409,
+    "hanzi": "⾏李",
+    "pinyin": "xíngli",
+    "type": "noun",
+    "meaning": "luggage",
+    "hsk_level": 3
+  },
+  {
+    "no": 410,
+    "hanzi": "兴趣",
+    "pinyin": "xìngqù",
+    "type": "noun",
+    "meaning": "interest",
+    "hsk_level": 3
+  },
+  {
+    "no": 411,
+    "hanzi": "休假",
+    "pinyin": "xiūjià",
+    "type": "verb to take a",
+    "meaning": "holiday",
+    "hsk_level": 3
+  },
+  {
+    "no": 412,
+    "hanzi": "需要",
+    "pinyin": "xūyào",
+    "type": "verb 、 noun to",
+    "meaning": "need; need",
+    "hsk_level": 3
+  },
+  {
+    "no": 413,
+    "hanzi": "选",
+    "pinyin": "xuǎn",
+    "type": "verb to",
+    "meaning": "choose",
+    "hsk_level": 3
+  },
+  {
+    "no": 414,
+    "hanzi": "选择",
+    "pinyin": "xuǎnzé",
+    "type": "verb to",
+    "meaning": "choose",
+    "hsk_level": 3
+  },
+  {
+    "no": 415,
+    "hanzi": "学期",
+    "pinyin": "xuéqī",
+    "type": "noun",
+    "meaning": "semester",
+    "hsk_level": 3
+  },
+  {
+    "no": 416,
+    "hanzi": "⽛",
+    "pinyin": "yá",
+    "type": "noun",
+    "meaning": "tooth",
+    "hsk_level": 3
+  },
+  {
+    "no": 417,
+    "hanzi": "⽛刷",
+    "pinyin": "yáshuā",
+    "type": "noun",
+    "meaning": "toothbrush",
+    "hsk_level": 3
+  },
+  {
+    "no": 418,
+    "hanzi": "⽺",
+    "pinyin": "yáng",
+    "type": "noun",
+    "meaning": "sheep",
+    "hsk_level": 3
+  },
+  {
+    "no": 419,
+    "hanzi": "养",
+    "pinyin": "yǎng",
+    "type": "verb to raise, to",
+    "meaning": "keep",
+    "hsk_level": 3
+  },
+  {
+    "no": 420,
+    "hanzi": "要求",
+    "pinyin": "yāoqiú",
+    "type": "verb 、 noun to",
+    "meaning": "demand; requirement",
+    "hsk_level": 3
+  },
+  {
+    "no": 421,
+    "hanzi": "页",
+    "pinyin": "yè",
+    "type": "classifier measure word for",
+    "meaning": "page",
+    "hsk_level": 3
+  },
+  {
+    "no": 422,
+    "hanzi": "⼀定",
+    "pinyin": "yídìng",
+    "type": "adjective 、 adverb",
+    "meaning": "certain; certainly",
+    "hsk_level": 3
+  },
+  {
+    "no": 423,
+    "hanzi": "⼀共",
+    "pinyin": "yígòng",
+    "type": "adverb altogether, in",
+    "meaning": "total",
+    "hsk_level": 3
+  },
+  {
+    "no": 424,
+    "hanzi": "⼀块⼉",
+    "pinyin": "yíkuàir",
+    "type": "noun 、 adverb the same",
+    "meaning": "place; together",
+    "hsk_level": 3
+  },
+  {
+    "no": 425,
+    "hanzi": "⼀样",
+    "pinyin": "yíyàng",
+    "type": "adjective",
+    "meaning": "same",
+    "hsk_level": 3
+  },
+  {
+    "no": 426,
+    "hanzi": "以后",
+    "pinyin": "yǐhòu",
+    "type": "noun later,",
+    "meaning": "after",
+    "hsk_level": 3
+  },
+  {
+    "no": 427,
+    "hanzi": "以前",
+    "pinyin": "yǐqián",
+    "type": "noun",
+    "meaning": "before",
+    "hsk_level": 3
+  },
+  {
+    "no": 428,
+    "hanzi": "以上",
+    "pinyin": "yǐshàng",
+    "type": "noun above, more",
+    "meaning": "than",
+    "hsk_level": 3
+  },
+  {
+    "no": 429,
+    "hanzi": "以外",
+    "pinyin": "yǐwài",
+    "type": "noun except,",
+    "meaning": "besides",
+    "hsk_level": 3
+  },
+  {
+    "no": 430,
+    "hanzi": "以为",
+    "pinyin": "yǐwéi",
+    "type": "verb to think, to",
+    "meaning": "believe",
+    "hsk_level": 3
+  },
+  {
+    "no": 431,
+    "hanzi": "以下",
+    "pinyin": "yǐxià",
+    "type": "noun below, less",
+    "meaning": "than",
+    "hsk_level": 3
+  },
+  {
+    "no": 432,
+    "hanzi": "⼀般",
+    "pinyin": "yìbān",
+    "type": "adjective general,",
+    "meaning": "ordinary",
+    "hsk_level": 3
+  },
+  {
+    "no": 433,
+    "hanzi": "⼀边",
+    "pinyin": "yìbiān",
+    "type": "adverb at the same",
+    "meaning": "time",
+    "hsk_level": 3
+  },
+  {
+    "no": 434,
+    "hanzi": "⼀直",
+    "pinyin": "yìzhí",
+    "type": "adverb always,",
+    "meaning": "straight",
+    "hsk_level": 3
+  },
+  {
+    "no": 435,
+    "hanzi": "⾳乐",
+    "pinyin": "yīnyuè",
+    "type": "noun",
+    "meaning": "music",
+    "hsk_level": 3
+  },
+  {
+    "no": 436,
+    "hanzi": "银⾏",
+    "pinyin": "yínháng",
+    "type": "noun",
+    "meaning": "bank",
+    "hsk_level": 3
+  },
+  {
+    "no": 437,
+    "hanzi": "银⾏卡",
+    "pinyin": "yínhángkǎ",
+    "type": "noun bank",
+    "meaning": "card",
+    "hsk_level": 3
+  },
+  {
+    "no": 438,
+    "hanzi": "饮料",
+    "pinyin": "yǐnliào",
+    "type": "noun",
+    "meaning": "beverage",
+    "hsk_level": 3
+  },
+  {
+    "no": 439,
+    "hanzi": "应该",
+    "pinyin": "yīnggāi",
+    "type": "verb should, ought",
+    "meaning": "to",
+    "hsk_level": 3
+  },
+  {
+    "no": 440,
+    "hanzi": "影响",
+    "pinyin": "yǐngxiǎng",
+    "type": "verb 、 noun to",
+    "meaning": "affect; influence",
+    "hsk_level": 3
+  },
+  {
+    "no": 441,
+    "hanzi": "⽤",
+    "pinyin": "yòng",
+    "type": "verb to",
+    "meaning": "use",
+    "hsk_level": 3
+  },
+  {
+    "no": 442,
+    "hanzi": "邮件",
+    "pinyin": "yóujiàn",
+    "type": "noun",
+    "meaning": "mail",
+    "hsk_level": 3
+  },
+  {
+    "no": 443,
+    "hanzi": "游客",
+    "pinyin": "yóukè",
+    "type": "noun",
+    "meaning": "tourist",
+    "hsk_level": 3
+  },
+  {
+    "no": 444,
+    "hanzi": "游戏",
+    "pinyin": "yóuxì",
+    "type": "noun",
+    "meaning": "game",
+    "hsk_level": 3
+  },
+  {
+    "no": 445,
+    "hanzi": "邮箱",
+    "pinyin": "yóuxiāng",
+    "type": "noun",
+    "meaning": "mailbox",
+    "hsk_level": 3
+  },
+  {
+    "no": 446,
+    "hanzi": "有关",
+    "pinyin": "yǒuguān",
+    "type": "verb 、 prepositionto have to do",
+    "meaning": "with; concerning",
+    "hsk_level": 3
+  },
+  {
+    "no": 447,
+    "hanzi": "有名",
+    "pinyin": "yǒumíng",
+    "type": "adjective",
+    "meaning": "famous",
+    "hsk_level": 3
+  },
+  {
+    "no": 448,
+    "hanzi": "有⽤",
+    "pinyin": "yǒuyòng",
+    "type": "adjective",
+    "meaning": "useful",
+    "hsk_level": 3
+  },
+  {
+    "no": 449,
+    "hanzi": "又",
+    "pinyin": "yòu",
+    "type": "adverb again,",
+    "meaning": "also",
+    "hsk_level": 3
+  },
+  {
+    "no": 450,
+    "hanzi": "⽻⽑球",
+    "pinyin": "yǔmáoqiú",
+    "type": "noun",
+    "meaning": "badminton",
+    "hsk_level": 3
+  },
+  {
+    "no": 451,
+    "hanzi": "语⾔",
+    "pinyin": "yǔyán",
+    "type": "noun",
+    "meaning": "language",
+    "hsk_level": 3
+  },
+  {
+    "no": 452,
+    "hanzi": "⾬⾐",
+    "pinyin": "yǔyī",
+    "type": "noun",
+    "meaning": "raincoat",
+    "hsk_level": 3
+  },
+  {
+    "no": 453,
+    "hanzi": "遇到",
+    "pinyin": "yùdào",
+    "type": "verb to",
+    "meaning": "encounter",
+    "hsk_level": 3
+  },
+  {
+    "no": 454,
+    "hanzi": "遇见",
+    "pinyin": "yùjiàn",
+    "type": "verb to",
+    "meaning": "meet",
+    "hsk_level": 3
+  },
+  {
+    "no": 455,
+    "hanzi": "园",
+    "pinyin": "yuán",
+    "type": "noun",
+    "meaning": "garden",
+    "hsk_level": 3
+  },
+  {
+    "no": 456,
+    "hanzi": "员",
+    "pinyin": "yuán",
+    "type": "suffix suffix for person with a certain",
+    "meaning": "job",
+    "hsk_level": 3
+  },
+  {
+    "no": 457,
+    "hanzi": "愿意",
+    "pinyin": "yuànyì",
+    "type": "verb",
+    "meaning": "willing",
+    "hsk_level": 3
+  },
+  {
+    "no": 458,
+    "hanzi": "越",
+    "pinyin": "yuè",
+    "type": "adverb more,",
+    "meaning": "increasingly",
+    "hsk_level": 3
+  },
+  {
+    "no": 459,
+    "hanzi": "⽉亮",
+    "pinyin": "yuèliang",
+    "type": "noun",
+    "meaning": "moon",
+    "hsk_level": 3
+  },
+  {
+    "no": 460,
+    "hanzi": "运动会",
+    "pinyin": "yùndònghuì",
+    "type": "noun sports",
+    "meaning": "meet",
+    "hsk_level": 3
+  },
+  {
+    "no": 461,
+    "hanzi": "运动员",
+    "pinyin": "yùndòngyuán",
+    "type": "noun",
+    "meaning": "athlete",
+    "hsk_level": 3
+  },
+  {
+    "no": 462,
+    "hanzi": "咱们",
+    "pinyin": "zánmen",
+    "type": "pronoun",
+    "meaning": "we",
+    "hsk_level": 3
+  },
+  {
+    "no": 463,
+    "hanzi": "脏",
+    "pinyin": "zāng",
+    "type": "adjective",
+    "meaning": "dirty",
+    "hsk_level": 3
+  },
+  {
+    "no": 464,
+    "hanzi": "怎么办",
+    "pinyin": "zěnme bàn",
+    "type": "what to",
+    "meaning": "do",
+    "hsk_level": 3
+  },
+  {
+    "no": 465,
+    "hanzi": "怎样",
+    "pinyin": "zěnyàng",
+    "type": "pronoun",
+    "meaning": "how",
+    "hsk_level": 3
+  },
+  {
+    "no": 466,
+    "hanzi": "站",
+    "pinyin": "zhàn",
+    "type": "verb to",
+    "meaning": "stand; station",
+    "hsk_level": 3
+  },
+  {
+    "no": 467,
+    "hanzi": "张",
+    "pinyin": "zhāng",
+    "type": "verb 、 classifier to",
+    "meaning": "open; measure word for flat",
+    "hsk_level": 3
+  },
+  {
+    "no": 468,
+    "hanzi": "长",
+    "pinyin": "zhǎng",
+    "type": "verb 、 suffix to",
+    "meaning": "grow; suffix for head",
+    "hsk_level": 3
+  },
+  {
+    "no": 469,
+    "hanzi": "着急",
+    "pinyin": "zháojí",
+    "type": "adjective",
+    "meaning": "anxious",
+    "hsk_level": 3
+  },
+  {
+    "no": 470,
+    "hanzi": "照",
+    "pinyin": "zhào",
+    "type": "verb to shine, to",
+    "meaning": "photograph",
+    "hsk_level": 3
+  },
+  {
+    "no": 471,
+    "hanzi": "照顾",
+    "pinyin": "zhàogù",
+    "type": "verb to take care",
+    "meaning": "of",
+    "hsk_level": 3
+  },
+  {
+    "no": 472,
+    "hanzi": "照⽚",
+    "pinyin": "zhàopiàn",
+    "type": "noun",
+    "meaning": "photo",
+    "hsk_level": 3
+  },
+  {
+    "no": 473,
+    "hanzi": "照相",
+    "pinyin": "zhàoxiàng",
+    "type": "verb to take a",
+    "meaning": "picture",
+    "hsk_level": 3
+  },
+  {
+    "no": 474,
+    "hanzi": "直到",
+    "pinyin": "zhídào",
+    "type": "verb",
+    "meaning": "until",
+    "hsk_level": 3
+  },
+  {
+    "no": 475,
+    "hanzi": "只",
+    "pinyin": "zhǐ",
+    "type": "adverb only,",
+    "meaning": "merely",
+    "hsk_level": 3
+  },
+  {
+    "no": 476,
+    "hanzi": "纸",
+    "pinyin": "zhǐ",
+    "type": "noun",
+    "meaning": "paper",
+    "hsk_level": 3
+  },
+  {
+    "no": 477,
+    "hanzi": "只能",
+    "pinyin": "zhǐ néng",
+    "type": "can",
+    "meaning": "only",
+    "hsk_level": 3
+  },
+  {
+    "no": 478,
+    "hanzi": "只是",
+    "pinyin": "zhǐshì",
+    "type": "adverb",
+    "meaning": "、",
+    "hsk_level": 3
+  },
+  {
+    "no": 479,
+    "hanzi": "只要",
+    "pinyin": "zhǐyào",
+    "type": "conjunction as long",
+    "meaning": "as",
+    "hsk_level": 3
+  },
+  {
+    "no": 480,
+    "hanzi": "只有",
+    "pinyin": "zhǐyǒu",
+    "type": "conjunction only",
+    "meaning": "if",
+    "hsk_level": 3
+  },
+  {
+    "no": 481,
+    "hanzi": "中",
+    "pinyin": "zhōng",
+    "type": "noun",
+    "meaning": "middle",
+    "hsk_level": 3
+  },
+  {
+    "no": 482,
+    "hanzi": "中间",
+    "pinyin": "zhōngjiān",
+    "type": "noun middle,",
+    "meaning": "between",
+    "hsk_level": 3
+  },
+  {
+    "no": 483,
+    "hanzi": "终于",
+    "pinyin": "zhōngyú",
+    "type": "adverb",
+    "meaning": "finally",
+    "hsk_level": 3
+  },
+  {
+    "no": 484,
+    "hanzi": "种",
+    "pinyin": "zhǒng",
+    "type": "classifier measure word for",
+    "meaning": "kinds",
+    "hsk_level": 3
+  },
+  {
+    "no": 485,
+    "hanzi": "重要",
+    "pinyin": "zhòngyào",
+    "type": "adjective",
+    "meaning": "important",
+    "hsk_level": 3
+  },
+  {
+    "no": 486,
+    "hanzi": "周末",
+    "pinyin": "zhōumò",
+    "type": "noun",
+    "meaning": "weekend",
+    "hsk_level": 3
+  },
+  {
+    "no": 487,
+    "hanzi": "主要",
+    "pinyin": "zhǔyào",
+    "type": "adjective",
+    "meaning": "main",
+    "hsk_level": 3
+  },
+  {
+    "no": 488,
+    "hanzi": "注意",
+    "pinyin": "zhùyì",
+    "type": "verb to pay attention",
+    "meaning": "to",
+    "hsk_level": 3
+  },
+  {
+    "no": 489,
+    "hanzi": "住院",
+    "pinyin": "zhùyuàn",
+    "type": "verb to be",
+    "meaning": "hospitalized",
+    "hsk_level": 3
+  },
+  {
+    "no": 490,
+    "hanzi": "字典",
+    "pinyin": "zìdiǎn",
+    "type": "noun",
+    "meaning": "dictionary",
+    "hsk_level": 3
+  },
+  {
+    "no": 491,
+    "hanzi": "⾃⾏车",
+    "pinyin": "zìxíngchē",
+    "type": "noun",
+    "meaning": "bicycle",
+    "hsk_level": 3
+  },
+  {
+    "no": 492,
+    "hanzi": "⼦",
+    "pinyin": "zi",
+    "type": "suffix noun",
+    "meaning": "suffix",
+    "hsk_level": 3
+  },
+  {
+    "no": 493,
+    "hanzi": "总",
+    "pinyin": "zǒng",
+    "type": "adverb",
+    "meaning": "、（ verb 、",
+    "hsk_level": 3
+  },
+  {
+    "no": 494,
+    "hanzi": "总是",
+    "pinyin": "zǒngshì",
+    "type": "adverb",
+    "meaning": "always",
+    "hsk_level": 3
+  },
+  {
+    "no": 495,
+    "hanzi": "嘴",
+    "pinyin": "zuǐ",
+    "type": "noun",
+    "meaning": "mouth",
+    "hsk_level": 3
+  },
+  {
+    "no": 496,
+    "hanzi": "最好",
+    "pinyin": "zuìhǎo",
+    "type": "adverb",
+    "meaning": "best",
+    "hsk_level": 3
+  },
+  {
+    "no": 497,
+    "hanzi": "最后",
+    "pinyin": "zuìhòu",
+    "type": "noun last,",
+    "meaning": "final",
+    "hsk_level": 3
+  },
+  {
+    "no": 498,
+    "hanzi": "最近",
+    "pinyin": "zuìjìn",
+    "type": "noun",
+    "meaning": "recently",
+    "hsk_level": 3
+  },
+  {
+    "no": 499,
+    "hanzi": "做客",
+    "pinyin": "zuòkè",
+    "type": "verb to be a",
+    "meaning": "guest",
+    "hsk_level": 3
+  },
+  {
+    "no": 500,
+    "hanzi": "作业",
+    "pinyin": "zuòyè",
+    "type": "noun",
+    "meaning": "homework",
+    "hsk_level": 3
+  }
+]
