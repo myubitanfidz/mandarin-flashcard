@@ -92,9 +92,9 @@
                 <span class="text-[10px] leading-tight font-medium">Cek Nada</span>
             </button>
 
-            <!-- 4. SISI BAWAH (Kelola HSK) -->
-            <button style="transform: translateY(182px);"
-                    class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
+            <!-- 4. SISI BAWAH (Kelola HSK) -> MEMBUKA MODAL KELOLA HSK -->
+            <button @click="showHskModal = true" style="transform: translateY(182px);"
+                    class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 active:scale-95 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
                 <span class="text-xs text-red-600 font-bold">📚 HSK</span>
                 <span class="text-[10px] leading-tight font-medium">Kelola File</span>
             </button>
@@ -181,6 +181,71 @@
 
         </div>
 
+        <!-- ================================================================= -->
+        <!-- LAYER 4: MODAL KELOLA FILE HSK                                    -->
+        <!-- ================================================================= -->
+        <div x-show="showHskModal" 
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 scale-95"
+             x-transition:enter-end="opacity-100 scale-100"
+             x-transition:leave="transition ease-in duration-200"
+             x-transition:leave-start="opacity-100 scale-100"
+             x-transition:leave-end="opacity-0 scale-95"
+             class="fixed inset-0 z-40 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+
+            <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl border-2 border-slate-100 p-6 md:p-8 relative flex flex-col gap-6">
+                
+                <!-- Header Modal -->
+                <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl">📚</span>
+                        <div>
+                            <h2 class="text-xl font-extrabold text-gray-900">Kelola Dataset HSK</h2>
+                            <p class="text-xs text-gray-500">Unduh bahan mentah atau impor ke database lokal</p>
+                        </div>
+                    </div>
+                    <button @click="showHskModal = false" class="text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
+                </div>
+
+                <!-- Kartu HSK Level 1 -->
+                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col gap-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="px-2.5 py-0.5 bg-red-100 text-red-600 text-[10px] font-bold rounded-full">300 Vocabularies</span>
+                            <h3 class="text-base font-bold text-gray-800 mt-1">New HSK Level 1 (PDF)</h3>
+                        </div>
+                        <span class="text-2xl">📄</span>
+                    </div>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        File PDF bahan mentah resmi memuat Hanzi, Pinyin, Part of Speech, dan Terjemahan Bahasa Indonesia lengkap.
+                    </p>
+
+                    <!-- Tombol Aksi -->
+                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                        <!-- Direct Link Download dari Repository GitHub -->
+                        <a href="https://raw.githubusercontent.com/username/repo/main/public/downloads/hsk/New-HSK-Vocabulary-Level-1.pdf" 
+                           target="_blank" 
+                           download
+                           class="flex-1 py-2.5 px-4 bg-slate-800 hover:bg-slate-900 active:scale-95 text-white text-xs font-bold rounded-xl text-center shadow transition flex items-center justify-center gap-2 cursor-pointer">
+                            <span>📥 Download PDF (GitHub)</span>
+                        </a>
+
+                        <!-- Impor Otomatis -->
+                        <button @click="alert('Impor dataset otomatis akan aktif setelah seeder dikonversi!')" 
+                                class="flex-1 py-2.5 px-4 bg-red-600 hover:bg-red-700 active:scale-95 text-white text-xs font-bold rounded-xl text-center shadow transition cursor-pointer">
+                            ⚡ Impor ke App
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Footer Modal -->
+                <div class="text-center pt-2">
+                    <p class="text-[11px] text-gray-400">File HSK disinkronkan secara terpusat melalui GitHub Open Source Release.</p>
+                </div>
+
+            </div>
+        </div>
+
         <script>
             function flashcardApp() {
                 return {
@@ -189,6 +254,7 @@
                     showCard: false,
                     isLoading: false,
                     isSubmitting: false,
+                    showHskModal: false,
 
                     currentVocab: {
                         id: null,
@@ -228,7 +294,6 @@
                                 body: JSON.stringify({ is_mastered: isMastered })
                             });
 
-                            // Ambil kosakata berikutnya secara otomatis
                             await this.fetchRandomVocab();
                         } catch (error) {
                             console.error('Gagal memperbarui status hafalan:', error);
@@ -239,8 +304,6 @@
 
                     startSession() {
                         this.isAnimating = true;
-
-                        // Tarik data dari API bersamaan dengan dimulainya animasi
                         this.fetchRandomVocab();
 
                         setTimeout(() => {
