@@ -174,7 +174,7 @@
         </div>
 
         <!-- ================================================================= -->
-        <!-- LAYER 4: MODAL KELOLA FILE HSK (LEVEL 1 - 9 LENGKAP)              -->
+        <!-- LAYER 4: MODAL KELOLA FILE HSK (LINK UNDUHAN TERHUBUNG)           -->
         <!-- ================================================================= -->
         <div x-show="showHskModal" 
              x-transition:enter="transition ease-out duration-300"
@@ -193,7 +193,7 @@
                         <span class="text-3xl">📚</span>
                         <div>
                             <h2 class="text-xl font-extrabold text-gray-900">Kelola Dataset HSK (1 - 9)</h2>
-                            <p class="text-xs text-gray-500">Unduh PDF dari GitHub atau pilih level latihan Flashcard</p>
+                            <p class="text-xs text-gray-500">Unduh PDF bahan mentah atau pilih level latihan Flashcard</p>
                         </div>
                     </div>
                     <button @click="showHskModal = false" class="text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
@@ -215,12 +215,12 @@
                             </div>
 
                             <div class="flex items-center gap-2 shrink-0">
-                                <!-- Direct Download dari GitHub -->
-                                <a :href="'https://raw.githubusercontent.com/username/repo/main/public/downloads/hsk/' + item.pdf" 
+                                <!-- Link Unduhan Dinamis ke Folder Public Laravel / Repository -->
+                                <a :href="'/downloads/hsk/' + item.pdf" 
                                    target="_blank" 
                                    download
                                    class="py-2 px-3 bg-slate-800 hover:bg-slate-900 active:scale-95 text-white text-xs font-bold rounded-xl text-center shadow transition flex items-center gap-1.5 cursor-pointer">
-                                    <span>📥 PDF</span>
+                                    <span>📥 Download PDF</span>
                                 </a>
 
                                 <button @click="selectLevel(item.level)" 
@@ -234,7 +234,7 @@
                 </div>
 
                 <div class="text-center pt-2 border-t border-slate-100 shrink-0">
-                    <p class="text-[11px] text-gray-400">Total 11.000 kosakata resmi New HSK 1 - 9 tersimpan di GitHub.</p>
+                    <p class="text-[11px] text-gray-400">Total 11.000 kosakata resmi New HSK 1 - 9 dapat diunduh langsung dari website.</p>
                 </div>
 
             </div>
