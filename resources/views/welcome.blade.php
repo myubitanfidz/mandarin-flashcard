@@ -18,7 +18,6 @@
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }
 
-            /* Deklarasi Variabel CSS Khusus untuk Smooth Animation */
             @property --hole-size {
                 syntax: '<percentage>';
                 inherits: false;
@@ -31,7 +30,7 @@
                 initial-value: 0%;
             }
 
-            /* ANIMASI IRIS WIPE */
+            /* ANIMASI IRIS WIPE SMOOTH */
             @keyframes irisWipe {
                 0% {
                     --fill-size: 0%;
@@ -67,7 +66,7 @@
                 <button @click="startSession()" 
                         class="absolute inset-[4px] bg-gradient-to-br from-red-600 via-red-600 to-amber-600 text-white font-black text-2xl md:text-3xl hexagon shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex flex-col items-center justify-center gap-1 group cursor-pointer">
                     <span class="tracking-wider group-hover:animate-pulse">START!</span>
-                    <span class="text-[10px] md:text-xs font-normal text-amber-200">开始学习</span>
+                    <span class="text-[10px] md:text-xs font-normal text-amber-200" x-text="'HSK Level ' + selectedLevel"></span>
                 </button>
             </div>
 
@@ -92,7 +91,7 @@
                 <span class="text-[10px] leading-tight font-medium">Cek Nada</span>
             </button>
 
-            <!-- 4. SISI BAWAH (Kelola HSK) -> MEMBUKA MODAL KELOLA HSK -->
+            <!-- 4. SISI BAWAH (Kelola HSK) -->
             <button @click="showHskModal = true" style="transform: translateY(182px);"
                     class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 active:scale-95 transition flex flex-col items-center justify-center p-2 text-center cursor-pointer">
                 <span class="text-xs text-red-600 font-bold">📚 HSK</span>
@@ -131,7 +130,7 @@
              x-transition:enter-end="opacity-100 scale-100 translate-y-0"
              class="z-30 w-full max-w-md bg-white rounded-3xl shadow-2xl border-4 border-amber-400 p-8 flex flex-col items-center text-center relative">
 
-            <!-- Tombol Kembali ke Hexagon Dashboard -->
+            <!-- Tombol Kembali ke Dashboard -->
             <button @click="closeCard()" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
 
             <!-- Tag Level HSK -->
@@ -148,22 +147,15 @@
             <!-- Display Kosakata -->
             <template x-if="!isLoading && currentVocab.id">
                 <div class="w-full flex flex-col items-center">
-                    <!-- 1. Karakter Hanzi Besar -->
                     <h1 class="text-7xl font-extrabold text-gray-900 tracking-wide mb-4" x-text="currentVocab.hanzi"></h1>
-
-                    <!-- 2. Pinyin dengan Nada -->
                     <p class="text-2xl font-semibold text-amber-600 mb-2" x-text="currentVocab.pinyin"></p>
-
-                    <!-- Jenis Kata -->
                     <span class="text-xs bg-slate-100 text-gray-600 px-2 py-0.5 rounded border border-gray-200 mb-6" x-text="currentVocab.type"></span>
 
-                    <!-- 3. Terjemahan / Arti -->
                     <div class="w-full bg-slate-50 rounded-2xl p-4 border border-slate-100 mb-6">
                         <p class="text-gray-500 text-xs uppercase tracking-wider mb-1">Arti / Terjemahan</p>
                         <p class="text-xl font-bold text-gray-800" x-text="currentVocab.meaning"></p>
                     </div>
 
-                    <!-- Action Buttons -->
                     <div class="flex gap-4 w-full">
                         <button @click="handleMastery(false)" 
                                 :disabled="isSubmitting"
@@ -182,7 +174,7 @@
         </div>
 
         <!-- ================================================================= -->
-        <!-- LAYER 4: MODAL KELOLA FILE HSK                                    -->
+        <!-- LAYER 4: MODAL KELOLA FILE HSK (LEVEL 1 - 9 LENGKAP)              -->
         <!-- ================================================================= -->
         <div x-show="showHskModal" 
              x-transition:enter="transition ease-out duration-300"
@@ -193,54 +185,56 @@
              x-transition:leave-end="opacity-0 scale-95"
              class="fixed inset-0 z-40 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
 
-            <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl border-2 border-slate-100 p-6 md:p-8 relative flex flex-col gap-6">
+            <div class="bg-white w-full max-w-2xl max-h-[85vh] rounded-3xl shadow-2xl border-2 border-slate-100 p-6 md:p-8 relative flex flex-col gap-6">
                 
                 <!-- Header Modal -->
-                <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-4 shrink-0">
                     <div class="flex items-center gap-3">
                         <span class="text-3xl">📚</span>
                         <div>
-                            <h2 class="text-xl font-extrabold text-gray-900">Kelola Dataset HSK</h2>
-                            <p class="text-xs text-gray-500">Unduh bahan mentah atau impor ke database lokal</p>
+                            <h2 class="text-xl font-extrabold text-gray-900">Kelola Dataset HSK (1 - 9)</h2>
+                            <p class="text-xs text-gray-500">Unduh PDF dari GitHub atau pilih level latihan Flashcard</p>
                         </div>
                     </div>
                     <button @click="showHskModal = false" class="text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
                 </div>
 
-                <!-- Kartu HSK Level 1 -->
-                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col gap-4">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <span class="px-2.5 py-0.5 bg-red-100 text-red-600 text-[10px] font-bold rounded-full">300 Vocabularies</span>
-                            <h3 class="text-base font-bold text-gray-800 mt-1">New HSK Level 1 (PDF)</h3>
+                <!-- Scrollable Grid HSK 1 - 9 -->
+                <div class="overflow-y-auto pr-1 flex flex-col gap-4">
+                    <template x-for="item in hskLevels" :key="item.level">
+                        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-amber-400 transition">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center font-black text-sm shadow-sm" x-text="item.tag"></div>
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="text-base font-bold text-gray-800" x-text="item.title"></h3>
+                                        <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-[10px] font-bold rounded-full" x-text="item.count + ' Vocabs'"></span>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-0.5" x-text="item.desc"></p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-2 shrink-0">
+                                <!-- Direct Download dari GitHub -->
+                                <a :href="'https://raw.githubusercontent.com/username/repo/main/public/downloads/hsk/' + item.pdf" 
+                                   target="_blank" 
+                                   download
+                                   class="py-2 px-3 bg-slate-800 hover:bg-slate-900 active:scale-95 text-white text-xs font-bold rounded-xl text-center shadow transition flex items-center gap-1.5 cursor-pointer">
+                                    <span>📥 PDF</span>
+                                </a>
+
+                                <button @click="selectLevel(item.level)" 
+                                        :class="selectedLevel === item.level ? 'bg-amber-500 text-white' : 'bg-red-600 hover:bg-red-700 text-white'"
+                                        class="py-2 px-3 active:scale-95 text-xs font-bold rounded-xl text-center shadow transition cursor-pointer">
+                                    <span x-text="selectedLevel === item.level ? '✓ Aktif' : 'Pilih'"></span>
+                                </button>
+                            </div>
                         </div>
-                        <span class="text-2xl">📄</span>
-                    </div>
-                    <p class="text-xs text-gray-600 leading-relaxed">
-                        File PDF bahan mentah resmi memuat Hanzi, Pinyin, Part of Speech, dan Terjemahan Bahasa Indonesia lengkap.
-                    </p>
-
-                    <!-- Tombol Aksi -->
-                    <div class="flex flex-col sm:flex-row gap-3 pt-2">
-                        <!-- Direct Link Download dari Repository GitHub -->
-                        <a href="https://raw.githubusercontent.com/username/repo/main/public/downloads/hsk/New-HSK-Vocabulary-Level-1.pdf" 
-                           target="_blank" 
-                           download
-                           class="flex-1 py-2.5 px-4 bg-slate-800 hover:bg-slate-900 active:scale-95 text-white text-xs font-bold rounded-xl text-center shadow transition flex items-center justify-center gap-2 cursor-pointer">
-                            <span>📥 Download PDF (GitHub)</span>
-                        </a>
-
-                        <!-- Impor Otomatis -->
-                        <button @click="alert('Impor dataset otomatis akan aktif setelah seeder dikonversi!')" 
-                                class="flex-1 py-2.5 px-4 bg-red-600 hover:bg-red-700 active:scale-95 text-white text-xs font-bold rounded-xl text-center shadow transition cursor-pointer">
-                            ⚡ Impor ke App
-                        </button>
-                    </div>
+                    </template>
                 </div>
 
-                <!-- Footer Modal -->
-                <div class="text-center pt-2">
-                    <p class="text-[11px] text-gray-400">File HSK disinkronkan secara terpusat melalui GitHub Open Source Release.</p>
+                <div class="text-center pt-2 border-t border-slate-100 shrink-0">
+                    <p class="text-[11px] text-gray-400">Total 11.000 kosakata resmi New HSK 1 - 9 tersimpan di GitHub.</p>
                 </div>
 
             </div>
@@ -255,6 +249,17 @@
                     isLoading: false,
                     isSubmitting: false,
                     showHskModal: false,
+                    selectedLevel: 1,
+
+                    hskLevels: [
+                        { level: 1, tag: 'L1', title: 'New HSK Level 1', count: '300', desc: 'Dasar Pemula', pdf: 'New-HSK-Vocabulary-Level-1.pdf' },
+                        { level: 2, tag: 'L2', title: 'New HSK Level 2', count: '200', desc: 'Kalimat Sederhana', pdf: 'New-HSK-Vocabulary-Level-2.pdf' },
+                        { level: 3, tag: 'L3', title: 'New HSK Level 3', count: '500', desc: 'Komunikasi Harian', pdf: 'New-HSK-Vocabulary-Level-3.pdf' },
+                        { level: 4, tag: 'L4', title: 'New HSK Level 4', count: '1.000', desc: 'Diskusi Topik Luas', pdf: 'New-HSK-Vocabulary-Level-4.pdf' },
+                        { level: 5, tag: 'L5', title: 'New HSK Level 5', count: '1.600', desc: 'Membaca Koran & Film', pdf: 'New-HSK-Vocabulary-Level-5.pdf' },
+                        { level: 6, tag: 'L6', title: 'New HSK Level 6', count: '1.800', desc: 'Tingkat Mahir', pdf: 'New-HSK-Vocabulary-L6.pdf' },
+                        { level: 7, tag: 'L7-9', title: 'New HSK Level 7 - 9', count: '5.600', desc: 'Tingkat Spesialis & Akademik', pdf: 'New-HSK-Vocabulary-Level-7-9.pdf' },
+                    ],
 
                     currentVocab: {
                         id: null,
@@ -268,7 +273,7 @@
                     async fetchRandomVocab() {
                         this.isLoading = true;
                         try {
-                            const response = await fetch('/api/flashcards/random');
+                            const response = await fetch(`/api/flashcards/random?level=${this.selectedLevel}`);
                             const json = await response.json();
                             if (json.success && json.data) {
                                 this.currentVocab = json.data;
@@ -300,6 +305,11 @@
                         } finally {
                             this.isSubmitting = false;
                         }
+                    },
+
+                    selectLevel(level) {
+                        this.selectedLevel = level;
+                        this.showHskModal = false;
                     },
 
                     startSession() {
