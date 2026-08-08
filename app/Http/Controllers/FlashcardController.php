@@ -53,4 +53,38 @@ class FlashcardController extends Controller
             'data' => $vocab
         ]);
     }
+
+    public function getRandomMasteredVocab()
+    {
+        $vocab = Vocab::where('is_mastered', true)->inRandomOrder()->first();
+
+        return response()->json([
+            'success' => true,
+            'data' => $vocab
+        ]);
+    }
+
+    public function getMasteredList()
+    {
+        $vocabs = Vocab::where('is_mastered', true)->latest()->get();
+
+        return response()->json([
+            'success' => true,
+            'data' => $vocabs
+        ]);
+    }
+
+    public function getVocabsByLevel($level)
+    {
+        if ($level == 7) {
+            $vocabs = Vocab::where('hsk_level', '>=', 7)->orderBy('id')->get();
+        } else {
+            $vocabs = Vocab::where('hsk_level', $level)->orderBy('id')->get();
+        }
+    
+        return response()->json([
+            'success' => true,
+            'data' => $vocabs
+        ]);
+    }
 }

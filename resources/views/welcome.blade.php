@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Mandarin Flashcard</title>
+        <title>Mandarin Flashcard & Daftar Hafal</title>
 
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -13,7 +13,6 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <style>
-            /* Hexagon Flat-Topped */
             .hexagon {
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }
@@ -30,20 +29,10 @@
                 initial-value: 0%;
             }
 
-            /* ANIMASI IRIS WIPE SMOOTH */
             @keyframes irisWipe {
-                0% {
-                    --fill-size: 0%;
-                    --hole-size: 0%;
-                }
-                40% {
-                    --fill-size: 150%;
-                    --hole-size: 0%;
-                }
-                100% {
-                    --fill-size: 150%;
-                    --hole-size: 150%;
-                }
+                0% { --fill-size: 0%; --hole-size: 0%; }
+                40% { --fill-size: 150%; --hole-size: 0%; }
+                100% { --fill-size: 150%; --hole-size: 150%; }
             }
 
             .animate-iris-wipe {
@@ -53,26 +42,28 @@
             }
         </style>
     </head>
-    <body class="bg-slate-100 text-gray-900 font-sans min-h-screen flex items-center justify-center p-4 overflow-hidden" x-data="flashcardApp()">
+    <body class="bg-slate-100 text-gray-900 font-sans min-h-screen flex items-center justify-center p-4 overflow-x-hidden" x-data="flashcardApp()">
         
         <!-- ================================================================= -->
-        <!-- LAYER 1: HONEYCOMB HEXAGON MAIN MENU                              -->
+        <!-- LAYER 1: HONEYCOMB HEXAGON MAIN MENU (HOME)                       -->
         <!-- ================================================================= -->
-        <div x-show="!isStarted" class="relative w-[580px] h-[580px] flex items-center justify-center">
+        <div x-show="currentView === 'home'" 
+             x-transition:leave="transition ease-in duration-300 transform opacity-0 scale-90"
+             class="relative w-[580px] h-[580px] flex items-center justify-center">
 
-            <!-- TOMBOL PUSAT: START! -->
+            <!-- TOMBOL PUSAT: START! (Review Hafalan) -->
             <div class="absolute z-20 w-[220px] h-[195px] flex items-center justify-center">
                 <div class="absolute inset-0 bg-amber-400 hexagon"></div>
-                <button @click="startSession()" 
+                <button @click="startMasteredSession()" 
                         class="absolute inset-[4px] bg-gradient-to-br from-red-600 via-red-600 to-amber-600 text-white font-black text-2xl md:text-3xl hexagon shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 flex flex-col items-center justify-center gap-1 group cursor-pointer">
                     <span class="tracking-wider group-hover:animate-pulse">START!</span>
-                    <span class="text-[10px] md:text-xs font-normal text-amber-200" x-text="'HSK Level ' + selectedLevel"></span>
+                    <span class="text-[9px] md:text-[10px] font-normal text-amber-200">Review Hafalan (复习)</span>
                 </button>
             </div>
 
-            <!-- 1. SISI ATAS (Daftar Hafal) -->
-            <button style="transform: translateY(-182px);"
-                    class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 transition flex flex-col items-center justify-center p-2 cursor-pointer">
+            <!-- 1. SISI ATAS (Daftar Hafal) -> BERPINDAH KE HALAMAN PENUH DAFTAR HAFAL -->
+            <button @click="goToMasteredPage()" style="transform: translateY(-182px);"
+                    class="absolute z-10 w-[148px] h-[130px] bg-white text-gray-900 hexagon font-semibold shadow-lg hover:bg-slate-50 hover:scale-105 active:scale-95 transition flex flex-col items-center justify-center p-2 cursor-pointer">
                 <span class="text-xs text-amber-600 font-bold">已学会</span>
                 <span class="text-xs font-medium">Daftar Hafal</span>
             </button>
@@ -124,27 +115,23 @@
         <!-- ================================================================= -->
         <!-- LAYER 3: FLASHCARD INTERACTIVE VIEW                              -->
         <!-- ================================================================= -->
-        <div x-show="showCard" 
-             x-transition:enter="transition ease-out duration-500"
+        <div x-show="currentView === 'flashcard'" 
+             x-transition:enter="transition ease-out duration-500 delay-300"
              x-transition:enter-start="opacity-0 scale-90 translate-y-10"
              x-transition:enter-end="opacity-100 scale-100 translate-y-0"
              class="z-30 w-full max-w-md bg-white rounded-3xl shadow-2xl border-4 border-amber-400 p-8 flex flex-col items-center text-center relative">
 
-            <!-- Tombol Kembali ke Dashboard -->
-            <button @click="closeCard()" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
+            <button @click="goHome()" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
 
-            <!-- Tag Level HSK -->
-            <span class="px-3 py-1 bg-red-100 text-red-600 text-xs font-bold rounded-full mb-6" x-text="'HSK Level ' + currentVocab.hsk_level"></span>
+            <span class="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-bold rounded-full mb-6">Mode Review Hafalan</span>
 
-            <!-- State Loading -->
             <template x-if="isLoading">
                 <div class="py-12 flex flex-col items-center gap-3">
                     <div class="w-10 h-10 border-4 border-amber-500 border-t-transparent rounded-full animate-spin"></div>
-                    <p class="text-sm text-gray-500 font-medium">Loading Kosakata...</p>
+                    <p class="text-sm text-gray-500 font-medium">Memuat Kosakata Hafalan...</p>
                 </div>
             </template>
 
-            <!-- Display Kosakata -->
             <template x-if="!isLoading && currentVocab.id">
                 <div class="w-full flex flex-col items-center">
                     <h1 class="text-7xl font-extrabold text-gray-900 tracking-wide mb-4" x-text="currentVocab.hanzi"></h1>
@@ -157,15 +144,15 @@
                     </div>
 
                     <div class="flex gap-4 w-full">
-                        <button @click="handleMastery(false)" 
+                        <button @click="toggleMastered(currentVocab.id, false)" 
                                 :disabled="isSubmitting"
-                                class="flex-1 py-3 bg-slate-200 hover:bg-slate-300 active:scale-95 text-gray-800 font-bold rounded-xl transition cursor-pointer disabled:opacity-50">
-                            Belum Hafal
+                                class="flex-1 py-3 bg-slate-200 hover:bg-slate-300 active:scale-95 text-gray-800 font-bold rounded-xl transition cursor-pointer disabled:opacity-50 text-xs">
+                            Batalkan Hafal ❌
                         </button>
-                        <button @click="handleMastery(true)" 
+                        <button @click="nextMasteredVocab()" 
                                 :disabled="isSubmitting"
-                                class="flex-1 py-3 bg-red-600 hover:bg-red-700 active:scale-95 text-white font-bold rounded-xl shadow-lg transition cursor-pointer disabled:opacity-50">
-                            Sudah Hafal ✅
+                                class="flex-1 py-3 bg-amber-500 hover:bg-amber-600 active:scale-95 text-white font-bold rounded-xl shadow-lg transition cursor-pointer disabled:opacity-50 text-xs">
+                            Lanjut Review ➡️
                         </button>
                     </div>
                 </div>
@@ -174,161 +161,265 @@
         </div>
 
         <!-- ================================================================= -->
-        <!-- LAYER 4: MODAL KELOLA FILE HSK (LINK UNDUHAN TERHUBUNG)           -->
+        <!-- LAYER 4: HALAMAN PENUH DAFTAR HAFAL (FULL SCREEN VIEW)             -->
         <!-- ================================================================= -->
-        <div x-show="showHskModal" 
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="opacity-0 scale-95"
-             x-transition:enter-end="opacity-100 scale-100"
-             x-transition:leave="transition ease-in duration-200"
-             x-transition:leave-start="opacity-100 scale-100"
-             x-transition:leave-end="opacity-0 scale-95"
-             class="fixed inset-0 z-40 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div x-show="currentView === 'mastered_page'" 
+             x-transition:enter="transition ease-out duration-400 delay-200"
+             x-transition:enter-start="opacity-0 translate-y-8"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-300 transform opacity-0 translate-y-8"
+             class="fixed inset-0 z-30 bg-slate-100 flex flex-col p-4 md:p-6 overflow-y-auto">
 
-            <div class="bg-white w-full max-w-2xl max-h-[85vh] rounded-3xl shadow-2xl border-2 border-slate-100 p-6 md:p-8 relative flex flex-col gap-6">
+            <!-- Header Utama Full Screen -->
+            <div class="max-w-6xl w-full mx-auto bg-white rounded-3xl shadow-sm border border-slate-200 p-6 mb-6 flex flex-col gap-4">
                 
-                <!-- Header Modal -->
-                <div class="flex items-center justify-between border-b border-slate-100 pb-4 shrink-0">
-                    <div class="flex items-center gap-3">
-                        <span class="text-3xl">📚</span>
-                        <div>
-                            <h2 class="text-xl font-extrabold text-gray-900">Kelola Dataset HSK (1 - 9)</h2>
-                            <p class="text-xs text-gray-500">Unduh PDF bahan mentah atau pilih level latihan Flashcard</p>
-                        </div>
+                <div class="flex items-center justify-between">
+                    <!-- Tombol Kembali dengan Animasi -->
+                    <button @click="goHome()" 
+                            class="flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 active:scale-95 text-slate-700 font-bold text-xs rounded-xl transition cursor-pointer">
+                        <span>⬅️ Kembali</span>
+                    </button>
+
+                    <!-- Judul Hanyu Shuiping Kaoshi -->
+                    <div class="text-center">
+                        <h1 class="text-xl md:text-2xl font-black tracking-wider text-red-600 uppercase">Hanyu Shuiping Kaoshi</h1>
+                        <p class="text-xs text-gray-400 font-medium tracking-wide">汉语水平考试 — Seluruh Daftar Kosakata HSK</p>
                     </div>
-                    <button @click="showHskModal = false" class="text-gray-400 hover:text-red-600 font-bold text-xl cursor-pointer">✕</button>
+
+                    <div class="w-20"></div>
                 </div>
 
-                <!-- Scrollable Grid HSK 1 - 9 -->
-                <div class="overflow-y-auto pr-1 flex flex-col gap-4">
-                    <template x-for="item in hskLevels" :key="item.level">
-                        <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:border-amber-400 transition">
-                            <div class="flex items-center gap-3">
-                                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center font-black text-sm shadow-sm" x-text="item.tag"></div>
+                <!-- Bagian Bawah Header: Tombol HSK 1-9 & Search Bar di Pojok Kanan -->
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
+                    
+                    <!-- List Tombol HSK 1 - 9 -->
+                    <div class="flex flex-wrap items-center justify-center gap-1.5">
+                        <template x-for="lvl in [1, 2, 3, 4, 5, 6, '7-9']" :key="lvl">
+                            <button @click="selectedHskFilter = lvl; loadVocabByLevel()"
+                                    :class="selectedHskFilter === lvl ? 'bg-red-600 text-white shadow-md' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'"
+                                    class="px-3 py-1.5 text-xs font-extrabold rounded-xl transition cursor-pointer"
+                                    x-text="'HSK ' + lvl">
+                            </button>
+                        </template>
+                    </div>
+
+                    <!-- Search Bar (Pinyin / Arti / Hanzi) -->
+                    <div class="w-full md:w-72">
+                        <input type="text" 
+                               x-model="searchQuery" 
+                               @input.debounce.300ms="filterVocabs()"
+                               placeholder="Cari pinyin, arti, atau hanzi..." 
+                               class="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:outline-none focus:border-red-500 transition">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- List Kosakata Bentukan Kiri-Kanan (Grid 2 Kolom) -->
+            <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-3 pb-12">
+                <template x-for="(item, index) in filteredVocabs" :key="item.id">
+                    <div :class="item.is_mastered ? 'bg-white border-slate-200' : 'bg-white/70 border-slate-200 opacity-50 blur-[0.4px] grayscale hover:opacity-100 hover:blur-none hover:grayscale-0 transition-all duration-300'"
+                         class="rounded-2xl p-4 border shadow-sm flex items-center justify-between gap-4 transition">
+                        
+                        <!-- Kiri: Nomor urut, Hanzi, Pinyin, Jenis, Arti -->
+                        <div class="flex items-center gap-4">
+                            <!-- 1. Nomor urut (tidak nempel ke huruf) -->
+                            <span class="text-xs font-bold text-gray-400 w-6 text-right" x-text="(index + 1) + '.'"></span>
+
+                            <div class="flex items-baseline gap-3">
+                                <!-- 2. Hanzi -->
+                                <span class="text-2xl font-black text-gray-900" x-text="item.hanzi"></span>
+                                
                                 <div>
                                     <div class="flex items-center gap-2">
-                                        <h3 class="text-base font-bold text-gray-800" x-text="item.title"></h3>
-                                        <span class="px-2 py-0.5 bg-amber-100 text-amber-700 text-[10px] font-bold rounded-full" x-text="item.count + ' Vocabs'"></span>
+                                        <!-- Pinyin -->
+                                        <span class="text-xs font-semibold text-amber-600" x-text="item.pinyin"></span>
+                                        <!-- 3. Jenis kata -->
+                                        <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded border border-slate-200" x-text="item.type"></span>
                                     </div>
-                                    <p class="text-xs text-gray-500 mt-0.5" x-text="item.desc"></p>
+                                    <!-- 4. Arti -->
+                                    <p class="text-xs text-gray-600 mt-0.5" x-text="item.meaning"></p>
                                 </div>
                             </div>
-
-                            <div class="flex items-center gap-2 shrink-0">
-                                <!-- Link Unduhan Dinamis ke Folder Public Laravel / Repository -->
-                                <a :href="'/downloads/hsk/' + item.pdf" 
-                                   target="_blank" 
-                                   download
-                                   class="py-2 px-3 bg-slate-800 hover:bg-slate-900 active:scale-95 text-white text-xs font-bold rounded-xl text-center shadow transition flex items-center gap-1.5 cursor-pointer">
-                                    <span>📥 Download PDF</span>
-                                </a>
-
-                                <button @click="selectLevel(item.level)" 
-                                        :class="selectedLevel === item.level ? 'bg-amber-500 text-white' : 'bg-red-600 hover:bg-red-700 text-white'"
-                                        class="py-2 px-3 active:scale-95 text-xs font-bold rounded-xl text-center shadow transition cursor-pointer">
-                                    <span x-text="selectedLevel === item.level ? '✓ Aktif' : 'Pilih'"></span>
-                                </button>
-                            </div>
                         </div>
-                    </template>
-                </div>
 
-                <div class="text-center pt-2 border-t border-slate-100 shrink-0">
-                    <p class="text-[11px] text-gray-400">Total 11.000 kosakata resmi New HSK 1 - 9 dapat diunduh langsung dari website.</p>
-                </div>
+                        <!-- Kanan: Tombol Animasi Goresan, Suara, dan Tombol Tambah (+) -->
+                        <div class="flex items-center gap-2 shrink-0">
+                            <!-- Tombol Goresan (Placeholder) -->
+                            <button class="p-2 bg-slate-50 hover:bg-amber-100 text-slate-500 hover:text-amber-700 rounded-xl border border-slate-200 text-xs transition cursor-pointer" title="Urutan Goresan (Segera)">
+                                ✍️ Goresan
+                            </button>
+                            <!-- Tombol Suara (Placeholder) -->
+                            <button class="p-2 bg-slate-50 hover:bg-red-100 text-slate-500 hover:text-red-700 rounded-xl border border-slate-200 text-xs transition cursor-pointer" title="Audio Suara (Segera)">
+                                🔊 Audio
+                            </button>
+                            <!-- Tombol Tambah (+) untuk Toggle Hafal -->
+                            <button @click="toggleMastered(item.id, !item.is_mastered)" 
+                                    :class="item.is_mastered ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'"
+                                    class="w-8 h-8 rounded-xl border border-slate-200 font-extrabold text-sm flex items-center justify-center transition cursor-pointer shadow-sm"
+                                    :title="item.is_mastered ? 'Sudah Dihafal' : 'Tandai Hafal'">
+                                <span x-text="item.is_mastered ? '✓' : '+'"></span>
+                            </button>
+                        </div>
 
+                    </div>
+                </template>
+
+                <!-- State Kosong -->
+                <template x-if="filteredVocabs.length === 0">
+                    <div class="col-span-full py-16 text-center text-gray-400 text-xs bg-white rounded-2xl border border-slate-200">
+                        Tidak ada kosakata yang cocok dengan pencarian tersebut.
+                    </div>
+                </template>
+            </div>
+
+        </div>
+
+        <!-- ================================================================= -->
+        <!-- LAYER 5: MODAL KELOLA FILE HSK                                   -->
+        <!-- ================================================================= -->
+        <div x-show="showHskModal" 
+             class="fixed inset-0 z-40 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+            <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl p-6 relative flex flex-col gap-4">
+                <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <h2 class="text-lg font-bold">Kelola File HSK</h2>
+                    <button @click="showHskModal = false" class="text-gray-400 hover:text-red-600 font-bold cursor-pointer">✕</button>
+                </div>
+                <p class="text-xs text-gray-600">Fitur unduh dataset resmi HSK 1 - 9 tersedia melalui open source repository.</p>
+                <a href="/downloads/hsk/New-HSK-Vocabulary-Level-1.pdf" target="_blank" download class="py-2 px-4 bg-slate-800 text-white text-xs font-bold rounded-xl text-center">📥 Download PDF HSK 1</a>
             </div>
         </div>
 
         <script>
             function flashcardApp() {
                 return {
-                    isStarted: false,
+                    currentView: 'home', // 'home', 'flashcard', 'mastered_page'
                     isAnimating: false,
-                    showCard: false,
                     isLoading: false,
                     isSubmitting: false,
                     showHskModal: false,
-                    selectedLevel: 1,
+                    
+                    allVocabs: [],
+                    filteredVocabs: [],
+                    selectedHskFilter: 1,
+                    searchQuery: '',
 
-                    hskLevels: [
-                        { level: 1, tag: 'L1', title: 'New HSK Level 1', count: '300', desc: 'Dasar Pemula', pdf: 'New-HSK-Vocabulary-Level-1.pdf' },
-                        { level: 2, tag: 'L2', title: 'New HSK Level 2', count: '200', desc: 'Kalimat Sederhana', pdf: 'New-HSK-Vocabulary-Level-2.pdf' },
-                        { level: 3, tag: 'L3', title: 'New HSK Level 3', count: '500', desc: 'Komunikasi Harian', pdf: 'New-HSK-Vocabulary-Level-3.pdf' },
-                        { level: 4, tag: 'L4', title: 'New HSK Level 4', count: '1.000', desc: 'Diskusi Topik Luas', pdf: 'New-HSK-Vocabulary-Level-4.pdf' },
-                        { level: 5, tag: 'L5', title: 'New HSK Level 5', count: '1.600', desc: 'Membaca Koran & Film', pdf: 'New-HSK-Vocabulary-Level-5.pdf' },
-                        { level: 6, tag: 'L6', title: 'New HSK Level 6', count: '1.800', desc: 'Tingkat Mahir', pdf: 'New-HSK-Vocabulary-L6.pdf' },
-                        { level: 7, tag: 'L7-9', title: 'New HSK Level 7 - 9', count: '5.600', desc: 'Tingkat Spesialis & Akademik', pdf: 'New-HSK-Vocabulary-Level-7-9.pdf' },
-                    ],
+                    currentVocab: { id: null, hanzi: '', pinyin: '', type: '', meaning: '', hsk_level: 1 },
 
-                    currentVocab: {
-                        id: null,
-                        hanzi: '',
-                        pinyin: '',
-                        type: '',
-                        meaning: '',
-                        hsk_level: 1
-                    },
-
-                    async fetchRandomVocab() {
+                    async fetchMasteredVocab() {
                         this.isLoading = true;
                         try {
-                            const response = await fetch(`/api/flashcards/random?level=${this.selectedLevel}`);
+                            const response = await fetch('/api/flashcards/mastered/random');
                             const json = await response.json();
                             if (json.success && json.data) {
                                 this.currentVocab = json.data;
+                            } else {
+                                alert('Belum ada kosakata yang dihafal! Silakan tandai beberapa kosakata terlebih dahulu.');
+                                this.goHome();
                             }
                         } catch (error) {
-                            console.error('Gagal mengambil data kosakata:', error);
+                            console.error('Gagal mengambil data hafal:', error);
                         } finally {
                             this.isLoading = false;
                         }
                     },
 
-                    async handleMastery(isMastered) {
-                        if (!this.currentVocab.id || this.isSubmitting) return;
+                    async goToMasteredPage() {
+                        this.isAnimating = true;
+                        await this.loadVocabByLevel();
 
-                        this.isSubmitting = true;
+                        setTimeout(() => {
+                            this.currentView = 'mastered_page';
+                        }, 440);
+
+                        setTimeout(() => {
+                            this.isAnimating = false;
+                        }, 1050);
+                    },
+
+                    async loadVocabByLevel() {
                         try {
-                            await fetch(`/api/flashcards/${this.currentVocab.id}/toggle-mastered`, {
+                            const response = await fetch(`/api/flashcards/level/${this.selectedHskFilter}`);
+                            const json = await response.json();
+                            if (json.success) {
+                                this.allVocabs = json.data;
+                                this.filterVocabs();
+                            }
+                        } catch (error) {
+                            console.error('Gagal memuat kosakata berdasarkan level:', error);
+                        }
+                    },
+
+                    filterVocabs() {
+                        let result = this.allVocabs;
+
+                        if (this.searchQuery.trim() !== '') {
+                            const q = this.searchQuery.toLowerCase();
+                            result = result.filter(item => 
+                                item.hanzi.toLowerCase().includes(q) ||
+                                item.pinyin.toLowerCase().includes(q) ||
+                                item.meaning.toLowerCase().includes(q)
+                            );
+                        }
+
+                        this.filteredVocabs = result;
+                    },
+
+                    async toggleMastered(id, newStatus) {
+                        try {
+                            await fetch(`/api/flashcards/${id}/toggle-mastered`, {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json',
                                     'X-CSRF-TOKEN': '{{ csrf_token() }}'
                                 },
-                                body: JSON.stringify({ is_mastered: isMastered })
+                                body: JSON.stringify({ is_mastered: newStatus })
                             });
 
-                            await this.fetchRandomVocab();
+                            // Update state lokal langsung agar UI reaktif tanpa reload
+                            const vocab = this.allVocabs.find(v => v.id === id);
+                            if (vocab) {
+                                vocab.is_mastered = newStatus;
+                            }
+                            this.filterVocabs();
+
+                            if (this.currentView === 'flashcard') {
+                                await this.fetchMasteredVocab();
+                            }
                         } catch (error) {
-                            console.error('Gagal memperbarui status hafalan:', error);
-                        } finally {
-                            this.isSubmitting = false;
+                            console.error('Gagal memperbarui status:', error);
                         }
                     },
 
-                    selectLevel(level) {
-                        this.selectedLevel = level;
-                        this.showHskModal = false;
+                    async nextMasteredVocab() {
+                        await this.fetchMasteredVocab();
                     },
 
-                    startSession() {
+                    startMasteredSession() {
                         this.isAnimating = true;
-                        this.fetchRandomVocab();
+                        this.fetchMasteredVocab().then(() => {
+                            if (!this.currentVocab.id) {
+                                this.isAnimating = false;
+                                return;
+                            }
+                            setTimeout(() => { 
+                                this.currentView = 'flashcard'; 
+                            }, 440);
+                            setTimeout(() => {
+                                this.isAnimating = false;
+                            }, 1050);
+                        });
+                    },
 
+                    goHome() {
+                        this.isAnimating = true;
                         setTimeout(() => {
-                            this.isStarted = true;
+                            this.currentView = 'home';
                         }, 440);
-
                         setTimeout(() => {
                             this.isAnimating = false;
-                            this.showCard = true;
                         }, 1050);
-                    },
-
-                    closeCard() {
-                        this.showCard = false;
-                        this.isStarted = false;
                     }
                 }
             }
